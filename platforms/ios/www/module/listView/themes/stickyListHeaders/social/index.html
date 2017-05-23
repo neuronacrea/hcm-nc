@@ -1,0 +1,25 @@
+<!--Theme Sticky List Headers Social-->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!-- Sticky List Headers Social-->
+    <ion-list ng-repeat="group in listViewController.data.items">
+        <ion-item class="item-divider" ion-affix data-affix-within-parent-with-class="list">
+            <h2 class="left">{{group.title}}</h2>
+            <span class="right">{{group.description}}</span>
+            <i class="icon {{group.icon}} right"></i>
+        </ion-item>
+        <!--Sticky List Headers Social Content-->
+        <ion-item class="item-avatar-right" ng-repeat="item in group.items">
+            <img ng-src="{{item.image}}" alt="{{item.title}}" ng-click="listViewController.onClick('onImage', item, $event)" />
+            <i class="icon {{item.iconLike}}" ng-click="listViewController.onClick('onLike', item, $event)"></i>
+            <i class="icon {{item.iconBookmark}}" ng-click="listViewController.onClick('onBookmark', item, $event)"></i>
+            <i class="icon {{item.iconShare}}" ng-click="listViewController.onClick('onShare', item, $event)"></i>
+            <h3 class="right">{{item.title}}</h3>
+            <!--Sticky List Headers Social Content Text-->
+            <div class="item-body">
+                <p>{{item.description}}</p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

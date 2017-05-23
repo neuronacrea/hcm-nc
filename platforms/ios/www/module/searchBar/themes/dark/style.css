@@ -1,0 +1,28 @@
+/* Genaral SearchBar Dark
+===========================================*/
+
+.bar-subheader,
+.item-input {
+    height: auto;
+    padding: 0;
+}
+.item-input i.icon {
+    color: #692d91;
+    font-size: 20px;
+    min-width: 40px;
+    text-align: center;
+}
+input[type=search] {
+    border-bottom: 1px solid yellow;
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid yellow;
+    box-shadow: none;
+}

@@ -1,0 +1,50 @@
+<ion-view view-title="Solicitudes y Certificados">
+    <!-- Theme Parallax Media --> 
+    <ion-content delegate-handle="scroller" elastic-header="elastic-header" class="news gBk" ng-controller="NewsController">
+        <!-- Parallax Media  Header-->
+        <div id="elastic-header" class="container-hearder-image general-cover news-cover">
+            <div class="profile-image">
+                <img src="data:image/png;base64,{{profile.url}}" class="image-login"/>
+            </div>
+        </div>
+        <!-- Parallax Media List-->
+        <div class="news">
+            <div class="row items-news" style="display:none">
+                <div class="col">
+                    <a href="#app/absenteeism">
+                        <div class="absenteeism waves-effect waves-light">
+                            AUSENTISMO
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row items-news">
+                <div class="col">
+                    <a href="#app/certificates">
+                        <div class="certificates waves-effect waves-light">
+                            SOLICITUD DE CERTIFICADOS
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row items-news" style="display:none">
+                <div class="col">
+                    <a href="#app/viatics">
+                        <div class="viatic waves-effect waves-light">
+                            SOLICITUD DE VIATICOS
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row items-news" style="display:none">
+                <div class="col">
+                    <a href="#app/queries">
+                        <div class="queries waves-effect waves-light">
+                            CONSULTAS
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

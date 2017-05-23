@@ -1,0 +1,11 @@
+/*  #Theme Google Cards Universal
+===========================================*/
+
+.slider {
+    height: auto;
+}
+.card {
+    margin: 10px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}

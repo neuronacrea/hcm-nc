@@ -1,0 +1,65 @@
+<ion-view hide-back-button="true" class="profile-view" ng-init="updateData()" cache-view="false">
+    <!-- Image Gallery Second Category -->
+  <ion-content class="has-header gBk profile" >
+
+    <div class="profile-cover">
+      <h1 class="profile-name">{{profile.nombre}}</h1>
+      <div class="profile-image">
+          <img src="data:image/png;base64,{{profile.url}}" ng-show="!error" class="image-login"/>
+          <img src="../../img/avatar/noFoto.png" alt="" ng-show="error" class="image-login">
+      </div>
+    </div>
+
+          <!-- Image Gallery Second Categor<ion-list class="list-profile">y Card-->
+          <div class="card half profile-items">
+              <a href="#app/salary/{{profile.pago.anio}}/{{profile.pago.mes}}">
+                <div class="waves-effect waves-block waves-dark card-image salary-card">
+                    <h5>NOMINA</h5>
+                    <h6>
+                        <small>{{ profile.pago.fechaInicio | date : "dd/MM/yyyy" }} a {{ profile.pago.fechaFin | date : "dd/MM/yyyy" }}
+                        </small>    
+                    </h6>
+                    <h5>{{profile.pago.total | currency:"$" }}</h5>
+                    <ion-item class="gallery-title" style="box-sizing: border-box;">
+                        <h2>Detalle</h2>
+                        <button class="button-circle button-plus"></button>
+                    </ion-item>
+                </div>
+              </a>
+          </div>
+          <div class="card half profile-items">
+              <a href="#app/vacations">
+                  <div class="waves-effect waves-block waves-dark card-image vacations">
+                    <h5>VACACIONES Y TIEMPO LIBRE</h5>
+                    <ion-item class="gallery-title" style="box-sizing: border-box;">
+                        <h2>Detalle</h2>
+                        <button class="button-circle button-plus"></button>
+                    </ion-item>
+                </div>
+              </a>
+          </div>
+          <div class="card half profile-items">
+              <a href="#app/news">
+                <div class="waves-effect waves-block waves-dark card-image news">
+                    <h5>NOVEDADES Y SOLICITUDES</h5>
+                    <ion-item class="gallery-title" style="box-sizing: border-box;">
+                        <h2>Detalle</h2>
+                        <button class="button-circle button-plus"></button>
+                    </ion-item>
+                </div>
+              </a>
+          </div>
+          <div class="card half profile-items" style="display:none">
+              <a href="#app/calendar1">
+                <div class="waves-effect waves-block waves-dark card-image homeworks">
+                <h5>TAREAS PENDIENTES</h5>
+                  <ion-item class="gallery-title" style="box-sizing: border-box;">
+                      <h2>Detalle</h2>
+                      <button class="button-circle button-plus"></button>
+                  </ion-item>
+              </div>
+              </a>
+          </div>
+      </ion-list>
+  </ion-content>
+</ion-view>

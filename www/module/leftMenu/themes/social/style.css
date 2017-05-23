@@ -1,0 +1,62 @@
+/*  #General Menu Social
+===========================================*/
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.view {
+    background-color: transparent;
+    z-index: 0;
+}
+.icon {
+    color: #863a96;
+}
+a.item {
+    background-color: #F4F5F5;
+}
+.item-avatar img {
+    max-width: 64px !important;
+    max-height: 64px !important;
+}
+.hero {
+    overflow: hidden;
+    border-bottom: 2px solid #fcd736;
+    height: 180px;
+}
+.hero p {
+    font-weight: 400;
+    color: #ffffff;
+    float: left;
+}
+.half {
+    width: 50%;
+    padding: 10px 0;
+    float: left;
+}
+.hero i.icon {
+    font-size: 1.3em;
+}
+.hero .item-icon-left {
+    padding-left: 45px;
+    border-color: transparent;
+}
+.hero .item-avatar {
+    padding-left: 90px;
+}
+span.counter {
+    font-weight: 800;
+    position: absolute;
+    right: 20px;
+    top: 38%;
+    border-radius: 4px;
+    color: #863a96;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.menu-list {
+    top: 180px;
+}

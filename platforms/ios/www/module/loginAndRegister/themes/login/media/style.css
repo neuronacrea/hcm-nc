@@ -1,0 +1,93 @@
+/*  Theme Genaral LoginAndRegister Media
+===========================================*/
+
+img {
+    margin: 30px auto 20px;
+    display: block;
+    max-width: 100px;
+}
+.prefix,
+.input-field .prefix.active {
+    color: #ffffff;
+    font-size: 28px !important;
+    top: 10px;
+}
+.input-field label {
+    left: 0 !important;
+    color: #ffffff;
+    font-size: 20px !important;
+    font-weight: 300;
+}
+.input-field label.active {
+    font-size: 12px !important;
+}
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: none;
+}
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label {
+    color: #ffffff;
+}
+input[type=text],
+input[type=password] {
+    color: #ffffff;
+    font-size: 25px;
+    border-bottom: 1px solid #ffffff;
+}
+.form-block {
+  margin: 20px;
+}
+.form-block p{
+  color: #ffffff;
+  margin-left: 10px;
+}
+.forma-input-block {
+    background: rgba(252, 182, 78, 0.8);
+    background: -webkit-linear-gradient(left, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: -o-linear-gradient(right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: -moz-linear-gradient(right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: linear-gradient(to right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+/*  Content
+===========================================*/
+
+.input-field {
+    margin-top: 40px;
+    font-weight: 300;
+}
+button.button-style {
+    font-weight: 400;
+    color: #fff !important;
+    font-size: 16px;
+    line-height: 20px;
+    width: 32%;
+    padding: 0;
+    margin-bottom: 15px;
+}
+/* Style Social Network
+===========================================*/
+
+.social {
+  width: 320px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.scroll {
+  height: 100%;
+}
+.social button{
+  width: 150px;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 5px;
+  display: block;
+  float: left !important;
+}
+.social p {
+  color: #fff;
+  margin: 0;
+}

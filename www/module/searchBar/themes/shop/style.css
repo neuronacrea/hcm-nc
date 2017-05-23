@@ -1,0 +1,49 @@
+/* Genaral SearchBar Light
+===========================================*/
+
+.shop {
+    margin: 50px 10px;
+}
+.shop > .item:first-child {
+    border-bottom: 1px solid #cedd37;
+}
+.title h2 {
+    color: #b0b536;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 10px;
+    line-height: 30px;
+    padding-right: 10px;
+    border-bottom: 1px solid #b0b536;
+}
+input[type=search] {
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+    color: #81772f;
+    margin: 0 10px;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+.item.item-input {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 10px;
+    border-radius: 4px;
+    clear: both;
+}
+.item.item-input > i.icon {
+    color: #81772f;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
+.item.item-input > i.icon:first-child {
+    border-right: 1px solid #81772f;
+}
+.hide-filter {
+    display: none;
+}

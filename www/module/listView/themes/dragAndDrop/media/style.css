@@ -1,0 +1,56 @@
+/*  #Theme Dragen And Drop Media
+================================================*/
+
+.media-content h2,
+.drag-and-drop h3,
+.media-content span {
+    font-weight: bold;
+    color: #ffffff;
+}
+.media-content h2 {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 5px;
+}
+p {
+    color: #ffffff !important;
+}
+.drag-and-drop h3 {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.media-content span {
+    font-size: 24px;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+.drag-and-drop {
+    top: 155px !important;
+}
+.item-complex.item-icon-left .item-content {
+    padding-left: 70px;
+}
+.media-content .item-icon-right {
+    padding-right: 120px;
+}
+.media-content {
+    height: 100px!important;
+}
+.media-content .item {
+    border-color: transparent;
+}
+.media-content i.icon {
+    color: #a4d5a6;
+    font-size: 30px;
+}
+.list i.icon,
+.item-reorder .button.icon {
+    color: #e77373;
+    font-size: 37px;
+}
+.item-complex .item-content,
+.item-radio .item-content {
+    background-color: transparent;
+}

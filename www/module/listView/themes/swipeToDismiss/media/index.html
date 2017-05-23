@@ -1,0 +1,43 @@
+<!--Theme Swipe To Dismiss Media-->
+<div class="bar bar-subheader media">
+    <!--Swipe To Dismiss Media Header-->
+    <ion-item class="transparent">
+        <i class="icon {{listViewController.data.iconPlay}}"></i>
+        <h2>{{listViewController.data.title}}</h2>
+        <p>{{listViewController.data.description}}</p>
+        <span>{{listViewController.data.shortDescription}}</span>
+        <div class="social-share right">
+            <i class="icon {{listViewController.data.iconLike}}" ng-click="listViewController.onClick('onLike', '', $event)"></i>
+            <i class="icon {{listViewController.data.iconFavorite}}" ng-click="listViewController.onClick('onFavorite', '', $event)"></i>
+            <i class="icon {{listViewController.data.iconShare}}" ng-click="listViewController.onClick('onShare', '', $event)"></i>
+        </div>
+    </ion-item>
+</div>
+<!--Swipe To Dismiss Media Content-->
+<ion-content class="container-image">
+    <div class="sticky-block" ng-repeat="item in listViewController.data.items">
+        <ion-slide-box on-slide-changed="listViewController.slideHasChanged($index, item)" show-pager="false">
+            <ion-slide>
+                <ion-item class="item-avatar-left item-icon-right waves-effect waves-light waves-block" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                    <img ng-src="{{item.image}}" />
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                    <span>{{item.shortDescription}}</span>
+                    <i class="icon {{item.iconPlay}}"></i>
+                </ion-item>
+            </ion-slide>
+            <ion-slide>
+                <!--Swipe To Dismiss Media Controls Item-->
+                <div class="controls">
+                    <a ng-click="listViewController.deleteItem($index)">
+                        {{item.message}}
+                    </a>
+                    <a ng-click="listViewController.undo(true)">
+                        <i class="icon {{item.iconUndo}}"></i>
+                    </a>
+                </div>
+            </ion-slide>
+            <ion-slide></ion-slide>
+        </ion-slide-box>
+    </div>
+</ion-content>

@@ -1,0 +1,105 @@
+<ion-view view-title="{{title}}">
+    <div ng-if="params.parallaxVisible">
+        <parallax theme="params.theme" data="params.data" events="params.events">
+        </parallax>
+    </div>
+
+    <div ng-if="params.loginPagesVisible">
+        <login theme="params.theme" data="params.data" events="params.events">
+        </login>
+    </div>
+
+    <div ng-if="params.registerPagesVisible">
+        <register theme="params.theme" data="params.data" events="params.events">
+        </register>
+    </div>
+
+    <div ng-if="params.imageGalleryVisible">
+        <image-gallery theme="params.theme" data="params.data" events="params.events">
+        </image-gallery>
+
+    </div>
+
+    <div ng-if="params.shapeImageViewVisible">
+        <ion-content>
+            <shape-image-view class="shape-img-block" ng-repeat="item in params.data" data="item" events="params.events">
+            </shape-image-view>
+        </ion-content>
+    </div>
+
+    <div ng-if="params.checkBoxesVisible">
+        <ion-content>
+            <checkbox theme="params.theme" data="params.data" events="params.events">
+            </checkbox>
+        </ion-content>
+    </div>
+
+    <div ng-if="params.searchBarsVisible">
+        <search theme="params.theme" data="params.data" events="params.events">
+        </search>
+    </div>
+
+    <div ng-if="params.splashScreensVisible">
+        <splash-screen theme="params.theme" data="params.data" events="params.events">
+        </splash-screen>
+    </div>
+
+    <div ng-if="params.listViewsVisible">
+        <div ng-if="params.expandableVisible">
+            <expandable theme="params.theme" data="params.data" events="params.events">
+            </expandable>
+        </div>
+
+        <div ng-if="params.dragAndDropVisible">
+            <drag-and-drop theme="params.theme" data="params.data" events="params.events">
+            </drag-and-drop>
+        </div>
+
+        <div ng-if="params.swipeToDismissVisible">
+            <swipe-to-dismiss theme="params.theme" data="params.data" events="params.events">
+            </swipe-to-dismiss>
+        </div>
+
+        <div ng-if="params.appearanceAnimationVisible">
+            <appearance-animation theme="params.theme" data="params.data" events="params.events">
+            </appearance-animation>
+        </div>
+
+        <div ng-if="params.stickyListHeadersVisible">
+            <sticky-list-headers theme="params.theme" data="params.data" events="params.events">
+            </sticky-list-headers>
+        </div>
+
+        <div ng-if="params.googleCardsVisible">
+            <google-cards theme="params.theme" data="params.data" events="params.events">
+            </google-cards>
+        </div>
+    </div>
+
+    <div ng-if="params.textViewVisible">
+        <ion-content>
+            <h1 class="{{params.theme}}">Typography</h1>
+            <h2 class="{{params.theme}}">Material design</h2>
+            <h3 class="{{params.theme}}">All set by Google instructions of Material design</h3>
+            <p class="{{params.theme}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </ion-content>
+    </div>
+
+    <div ng-if="params.spinnerVisible">
+        <ion-content class="spinner-view" scroll="false">
+          <ion-slide-box>
+            <ion-slide ng-repeat="item in params.data.items">
+              <div class="spinner">
+                <spinner theme="item.icon"></spinner>
+              </div>
+            </ion-slide>
+          </ion-slide-box>
+        </ion-content>
+    </div>
+
+    <div ng-if="params.wizardVisible">
+        <wizard theme="params.theme" data="params.data" events="params.events"></wizard>
+    </div>
+
+
+</ion-view>

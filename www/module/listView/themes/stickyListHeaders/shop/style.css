@@ -1,0 +1,62 @@
+/*  #Thema General Sticky List Headers Shop
+===========================================*/
+
+img {
+    border-radius: 4px;
+}
+.item-divider h1 {
+    color: #cddc37;
+    padding: 5px 0;
+    font-size: 20px!important;
+    font-weight: bold;
+}
+.item-divider {
+    background-color: #424242;
+}
+/*  #Gallery Style
+===========================================*/
+
+.gallery {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.gallery img {
+    width: 24% !important;
+    display: block;
+    float: left;
+    margin-left: 4px;
+}
+.gallery > img:first-child {
+    margin-left: 0;
+}
+/*  #Contact Info Style
+===========================================*/
+
+.content-info h2 {
+    color: #434343;
+}
+.content-info button {
+    color: #ffffff;
+}
+.content-info {
+    display: table;
+    width: 100%;
+}
+.info-block {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.content-info .description {
+    margin-left: 20px;
+    line-height: 25px;
+    font-style: italic;
+}
+.content-info .old-price {
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+.content-info .price {
+    font-weight: bold;
+    font-size: 24px;
+    color: #cddc39;
+}

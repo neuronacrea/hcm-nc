@@ -1,0 +1,34 @@
+<!--Theme Sticky List Headers Shop-->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Sticky List Headers Content-->
+    <ion-list ng-repeat="group in listViewController.data.items">
+        <ion-item class="item-header item-divider" ion-affix data-affix-within-parent-with-class="list">
+            <h1>{{group.title}}</h1>
+        </ion-item>
+        <ion-item ng-repeat="item in group.items">
+            <!--Sticky List Headers Shop Hero-->
+            <img class="full-image" ng-src="{{item.image}}">
+            <!--Theme Sticky List Headers Shop Gallery-->
+            <div class="gallery">
+                <img ng-src="{{item.image1}}">
+                <img ng-src="{{item.image2}}">
+                <img ng-src="{{item.image3}}">
+                <img ng-src="{{item.image4}}">
+            </div>
+            <!--Theme Sticky List Headers Content Info-->
+            <div class="content-info">
+                <div class="info-block">
+                    <h2>{{item.title}}</h2>
+                    <p class="old-price">{{item.oldPrice}}</p>
+                    <p class="price left">{{item.newPrice}}</p>
+                    <p class="description left">{{item.description}}</p>
+                </div>
+                <div class="info-block">
+                    <button class="lime waves-effect btn-flat right" ng-click="listViewController.onClick('onBuy', item, $event)">{{item.button}}</button>
+                </div>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

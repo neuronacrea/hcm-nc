@@ -1,0 +1,25 @@
+<!-- Themes Swipe To Dismiss Socail -->
+<ion-content class="container-image has-header">
+    <!-- Swipe To Dismiss Social List-->
+    <ion-list>
+        <ion-slide-box on-slide-changed="listViewController.slideHasChanged($index, item)" show-pager="false" ng-repeat="item in listViewController.data.items" type="item-text-wrap">
+            <ion-slide ng-click="listViewController.onClick('onItemClick', item, $event)">
+                <ion-item class="item-avatar item-text-wrap">
+                    <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                </ion-item>
+            </ion-slide>
+            <ion-slide>
+                <div class="control text-center">
+                    <a href="#" ng-click="listViewController.deleteItem($index)">{{item.message}}</a>
+                    <a href="#" ng-click="listViewController.undo(true)">
+                        <i class="icon {{item.iconUndo}}"></i>
+                        <p>{{item.undo}}</p>
+                    </a>
+                </div>
+            </ion-slide>
+            <ion-slide></ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

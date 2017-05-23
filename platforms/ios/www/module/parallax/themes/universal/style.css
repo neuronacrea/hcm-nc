@@ -1,0 +1,26 @@
+/*  #Theme Parallax Universal
+===========================================*/
+
+i.icon {
+    font-size: 24px !important;
+}
+a.item {
+    display: block;
+    padding-top: 25px;
+}
+.container-hearder-image {
+    height: 50vw;
+    position: relative;
+    background-color: rgba(148, 148, 148, 0.7);
+    background-blend-mode: multiply;
+}
+.avatar {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+}

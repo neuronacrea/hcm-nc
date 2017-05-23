@@ -1,0 +1,150 @@
+.list-salary a.item{
+    padding: 15px;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1)
+}
+.list-salary h3{
+    float: left;
+    vertical-align: middle;
+}
+.list-salary p{
+    float: right;
+    vertical-align: middle;
+    ºnt-size: 15px;
+}
+.list-salary p.less-salary{
+    color: #eda900;
+}
+.general-cover h6:last-child{
+    top: 22px;
+}
+/*.vacations h6{
+    color: #eda900;
+}*/
+.salary .slider{height: 100%;}
+.next-slide, .prev-slide{
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+    top: 112px;
+    z-index: 100;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.next-slide{
+    right: 15px;
+}
+.prev-slide{
+    left: 15px;
+}
+/*  #Thema Parallax Media
+===========================================*/
+
+.share {
+    padding: 15px;
+}
+i.icon {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.container-hearder-image {
+    height: 300px;
+    background-color: rgba(148, 148, 148, 0.8);
+    background-blend-mode: multiply;
+    border-bottom: 2px solid #ffffff;
+}
+.parallax-title {
+    padding-top: 120px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+h1,
+h2 {
+    color: #ffffff;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    line-height: normal;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+.play-block {
+    display: table;
+    margin: 0 auto;
+}
+.play-block > i.icon:nth-child(2) {
+    font-size: 80px !important;
+}
+.play-block i.icon {
+    font-size: 50px;
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*  #Parallax Media Content
+===========================================*/
+
+.container-body-image .item {
+    color: #ffffff !important;
+    /*background-color: rgba(54, 71, 79, 0.7) !important;*/
+}
+.container-body-image i.icon {
+    color: #ef4437;
+}
+.container-body-image a.item {
+    display: block;
+}
+.container-body-image .item-thumbnail-left > img {
+    max-width: 42px;
+    max-height: 42px;
+}
+.container-body-image .item-thumbnail-left {
+    min-height: 64px;
+    padding-left: 70px;
+    padding-right: 90px;
+}
+.container-body-image span {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.container-body-image h3 {
+    font-size: 14px;
+    color: rgba(255,255,255,.65);
+    margin-bottom: 0;
+    margin-top: 9px;
+    line-height: normal;
+}
+.container-body-image p {
+    font-weight: normal;
+    color: #ffffff;
+    line-height: normal;
+    margin-top: 8px;
+}
+.list-salary p.less-salary, .container-body-image p{
+    font-size: 20px;
+}
+.list-salary .row{
+    padding: 0;
+}
+.salary-footer{
+    color: #8f9db8;
+    padding-top: 9px;
+    position: relative;
+}
+.salary-footer .col{
+    padding-top: 3px;
+    text-align: center;
+}
+.salary-footer img{
+    height: 25px;
+}
+.bar .header-item button{color: #FFF;}

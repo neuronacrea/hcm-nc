@@ -1,0 +1,86 @@
+<ion-view view-title="Vacaciones" cache-view="false">
+    <!-- Theme Parallax Media --> 
+    <ion-content class="salary gBk" ng-controller="VacationController">
+        <!-- Parallax Media  Header-->
+        <div id="elastic-header" class="container-hearder-image general-cover vacations-cover">
+            <h1>MIS VACACIONES</h1>
+        </div>
+        <!-- Parallax Media List-->
+        <div class="vacations">
+            <div class="row">
+                <div class="col">
+                    <h6>                       
+                        <p>
+                            <strong>Fecha de corte:</strong>
+                            {{ vacaciones.fechaCorte | date : "dd/MM/yyyy" }}
+                        </p>
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-text">
+                        <div class="col col-50">
+                            Total consolidado:
+                        </div>
+                        <div class="col col-50">
+                            {{vacaciones.consolidado}}
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-text">
+                        <div class="col col-50">
+                            A tomar por política:
+                        </div>
+                        <div class="col col-50">
+                            {{vacaciones.politica}}
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-text">
+                        <div class="col col-50">
+                            Programado:
+                        </div>
+                        <div class="col col-50">
+                            {{vacaciones.programado}}
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display:none">
+                <div class="col">
+                    <button class="button button-block button-heinsohn button-schedule waves-effect waves-light">
+                        Ver programación
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col schedule-title"><h6>Programe sus vacaciones</h6></div>
+            </div>
+            <div class="row schedule">
+                <div class="col col-50">
+                    <h6>Cantidad de días:</h6>
+                    <input type="text" class="input-text" ng-model="vacaciones.cantidaddias" placeholder="0" required>
+                </div>
+                <div class="col col-50">
+                    <h6>Fecha de inicio:</h6>
+                    <input type="date" name="fecha" ng-model="vacaciones.fechaInicio" id="fechaInicioVacaciones">
+                    <span class="error" ng-show="errorF">{{vacaciones.mensajeObligatorio}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button ng-click='solicitar();' class="button button-block button-heinsohn button-schedule waves-effect waves-light">
+                        Solicitar vacaciones
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

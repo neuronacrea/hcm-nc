@@ -1,0 +1,50 @@
+/*  #General Menu Travel
+===========================================*/
+
+i.icon {
+    color: #fcd836;
+}
+a i.icon {
+    font-size: 24px !important;
+    left: 25px!important;
+}
+.list a.item {
+    background-color: rgba(38, 50, 56, 0.7);
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #fcd736;
+    padding-left: 70px;
+}
+a.activated {
+    background-color: transparent !important;
+}
+.container-hearder-image h2 {
+    font-size: 32px !important;
+    color: #ffffff;
+    font-weight: 300;
+}
+.container-hearder-image i.icon {
+    font-size: 5.2em !important;
+    padding-top: 20px;
+    display: block;
+}
+.container-hearder-image {
+    position: relative;
+    height: 200px;
+    background-color: rgba(129, 119, 47, 0.7);
+    background-blend-mode: multiply;
+}
+.container-body-image {
+    margin-top: 195px;
+}
+.menu-left {
+    width: 90% !important;
+}
+.menu-open .menu-content {
+    transform: translate3d(90%, 0px, 0px) !important;
+    -ms-transform: translate3d(90%, 0px, 0px) !important;
+    /* IE 9 */
+    
+    -webkit-transform: translate3d(90%, 0px, 0px) !important;
+    /* Chrome, Safari, Opera */
+}

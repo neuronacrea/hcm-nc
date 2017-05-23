@@ -1,0 +1,41 @@
+<!--Theme LoginAndRegister Media-->
+<ion-content class="container-image has-header">
+    <!--Theme LoginAndRegister Media Logo-->
+    <img ng-src="{{loginController.data.logo}}" />
+    <!--Theme LoginAndRegister Social-->
+    <div class="social">
+      <p>{{loginController.data.signInWith}}</p>
+      <button class="btn waves-effect waves-light right icon-left icon icon-facebook-box indigo darken-1" ng-click="loginController.onClick('onFacebook')">
+        {{loginController.data.facebook}}
+      </button>
+      <button class="btn waves-effect waves-light right icon-left icon icon-twitter-box blue lighten-2" ng-click="loginController.onClick('onTwitter')">
+        {{loginController.data.twitter}}
+      </button>
+      <button class="btn waves-effect waves-light right icon-left icon icon-google-plus-box deep-orange darken-4" ng-click="loginController.onClick('onGoogle')">
+        {{loginController.data.google}}
+      </button>
+      <button class="btn waves-effect waves-light right icon-left icon icon-pinterest deep-orange accent-3" ng-click="loginController.onClick('onPinterest')">
+        {{loginController.data.pinterest}}
+      </button>
+    </div>
+    <!--Theme LoginAndRegister Media Form-->
+    <div class="form-block">
+        <p>Or login with CSF account</p>
+        <div class="forma-input-block">
+          <div class="input-field center-block">
+              <input id="username" type="text" ng-model="loginController.username">
+              <label for="username">{{loginController.data.username}}</label>
+          </div>
+          <div class="input-field center-block">
+              <input id="password" type="password" ng-model="loginController.password">
+              <label for="password">{{loginController.data.password}}</label>
+          </div>
+          <button class="button-style waves-effect waves-light btn-flat disabled" ng-click="loginController.onClick('onSkip')">{{loginController.data.skip}}
+          </button>
+          <button class="button-style waves-effect waves-light btn-flat disabled" ng-click="loginController.onClick('onRegister')">{{loginController.data.register}}
+          </button>
+          <button class="button-style waves-effect waves-light btn-flat disabled" ng-click="loginController.onClick('onLogin')">{{loginController.data.login}}
+          </button>
+      </div>
+    </div>
+</ion-content>

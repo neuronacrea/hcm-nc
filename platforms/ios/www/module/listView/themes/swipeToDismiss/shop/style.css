@@ -1,0 +1,128 @@
+/*  #Theme General Swipe To Dismiss Shop
+===========================================*/
+
+img {
+    top: 0 !important;
+    left: 0 !important;
+}
+p {
+    color: #bdbdbd;
+    line-height: 14px;
+}
+h1,
+h2,
+p,
+span {
+    z-index: 99999;
+    position: relative;
+}
+h2 {
+    color: #c0cb33;
+    font-size: 16px !important;
+    margin-top: 5px!important;
+    line-height: 20px;
+}
+.container-image .item {
+    padding-right: 80px;
+    padding-top: 0;
+    padding-left: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 82px;
+}
+.list {
+    padding-bottom: 135px;
+}
+/*  #Content
+===========================================*/
+
+.slider {
+    height: 80px;
+    margin: 1px 0;
+}
+.total-price,
+.new-price {
+    font-weight: bold;
+}
+.total-price {
+    font-size: 30px;
+    color: #9e9f36;
+    float: left;
+    margin: 0;
+    line-height: normal;
+    padding: 5px 10px;
+}
+.new-price {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    color: #b0b536;
+    font-size: 20px;
+}
+.old-price {
+    font-weight: 400;
+    top: 20px;
+    position: absolute;
+    right: 5px;
+    color: #bdbdbd;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.controls {
+    width: 100%;
+    display: table;
+    height: 90px;
+}
+.controls a {
+    min-height: 90px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #767777;
+    font-size: 14px;
+}
+.controls a:first-child {
+    width: 70%;
+}
+.controls a:last-child {
+    font-size: 30px;
+}
+/*  #Fixed block
+===========================================*/
+
+.footer.bar {
+    display: block;
+    padding: 0;
+    height: auto;
+}
+.footer-content {
+    position: relative;
+    display: table;
+    width: 100%;
+    clear: both;
+    padding: 10px 10px;
+}
+.footer-content button {
+    font-weight: normal;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+.footer-content h4 {
+    margin: 0 !important;
+    color: #ffffff;
+    font-size: 24px;
+}
+.footer-content p {
+    font-style: italic;
+    margin: 0 !important;
+    color: #ffffff;
+    line-height: normal;
+}
+.footer-content span {
+    font-weight: bold;
+    color: #b0b536;
+    font-size: 12px;
+}
+.footer-half {
+    display: table-cell;
+    vertical-align: bottom;
+}

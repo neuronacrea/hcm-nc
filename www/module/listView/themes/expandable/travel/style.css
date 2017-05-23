@@ -1,0 +1,98 @@
+/*  #Theme General Expandable Travel
+===========================================*/
+
+p,
+.article-list,
+.collapsible-body span {
+    font-weight: 400;
+}
+.collapsible-body span {
+    color: #BDBCBC;
+}
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 32px;
+}
+.active {
+    background-color: #f4f5f5 !important;
+    border-color: #f4f5f5 !important;
+}
+.collapsible-body .item,
+.article-block.item {
+    border-color: transparent;
+}
+.collapsible-header {
+    padding: 10px 0;
+}
+a.item {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+}
+a.item::before {
+    content: "";
+    width: 70%;
+    border-bottom: 1px solid #e0e2e2;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.collapsible-body {
+    border-bottom: 1px solid transparent;
+}
+.collapsible {
+    margin: 0;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: none;
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+.container-hearder-image {
+    color: #ffffff;
+    font-size: 32px;
+    height: 145px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    z-index: 99999;
+    position: relative;
+    background-color: rgba(148, 148, 148, 0.7);
+    background-blend-mode: multiply;
+}
+.collapsible-body > .article-list:last-child {
+    border-bottom: 1px solid transparent;
+}
+.article-block::before {
+    content: "";
+    width: 50%;
+    border-bottom: 1px solid #e0e2e2;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+i.icon {
+    margin: 0 auto;
+    float: none;
+    font-size: 24px;
+    color: #fcd836;
+    line-height: 30px;
+}
+/*  #Accordion
+===========================================*/
+
+.item-stable {
+    text-align: center;
+}
+.article-list {
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    color: #bdbdbd;
+    font-size: 14px;
+}

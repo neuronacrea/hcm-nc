@@ -1,0 +1,31 @@
+/*  #General Shop Checkbox
+===========================================*/
+.checkbox-block {
+    margin: 10px 0; 
+}
+.checkbox-block .item {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 5px;
+    display: block;
+    float: left;
+    width: 50%;
+}
+input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #81772f;
+    background-color: transparent;
+}
+input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #81772f !important;
+}
+input[type="checkbox"] + label {
+    font-weight: 300;
+    margin: 5px 15px;
+    font-size: 1.2em !important;
+    color: #b0b536;
+    line-height: 20px !important;
+}
+input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #81772f;
+    border-bottom: 2px solid #81772f;
+}

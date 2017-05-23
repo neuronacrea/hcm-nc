@@ -1,0 +1,28 @@
+/*  #General Menu Universal
+===========================================*/
+
+.hero {
+    height: 200px;
+    position: relative;
+}
+.hero span {
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #ffffff;
+}
+a.item {
+    background-color: #F4F5F5;
+    color: #616262;
+    padding-left: 65px;
+}
+.has-header i.icon {
+    font-size: 25px;
+}
+.menu-list {
+    top: 200px;
+    color: #616262;
+    line-height: normal;
+    font-size: 16px !important;
+}

@@ -1,0 +1,75 @@
+/*  #Thema Search Media
+===========================================*/
+
+.search-box a {
+    color: #ffffff;
+    margin-top: 10px;
+}
+input[type=search] {
+    border-bottom: 1px solid transparent;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+.item.item-input > i.icon:first-child {
+    border-right: 1px solid #ffffff;
+}
+input[type="checkbox"].filled-in:not(:checked)+label:after {
+    border: 2px solid #ef4438;
+}
+input[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #ef4438;
+    background-color: #ef4438;
+}
+input[type="checkbox"].filled-in:checked+label:before {
+    border-right: 2px solid #253238;
+    border-bottom: 2px solid #253238;
+}
+input[type="checkbox"]+label {
+    position: absolute;
+    right: 0px;
+}
+.search-box .item > i.icon {
+    color: #ef4438;
+    font-size: 27px;
+}
+.search-box .item-input > i.icon {
+    color: #ef4438;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
+.search-box h2 {
+    color: #fff;
+    padding: 10px 0;
+    line-height: normal;
+    font-weight: 100;
+    font-size: 23px;
+}
+.search-box {
+    background: rgba(252, 182, 78, 0.8);
+    background: -webkit-linear-gradient(left, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: -o-linear-gradient(right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: -moz-linear-gradient(right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    background: linear-gradient(to right, rgba(252, 182, 78, 0.8), rgba(241, 89, 43, 0.8), rgba(183, 32, 37, 0.8));
+    margin-top: 5em;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.search-box > .check {
+    background-color: rgba(38, 50, 56, 0.8) !important;
+    border-color: transparent;
+    margin-bottom: 10px;
+    padding-right: 45px;
+    color: #fff;
+}
+.item-input {
+    background-color: rgba(38, 50, 56, 0.8) !important;
+    padding: 0;
+}

@@ -1,0 +1,48 @@
+/*  #Theme Expandable Universal
+===========================================*/
+
+.list-media .icon {
+    font-size: 24px!important;
+}
+.collapsible {
+    margin: 0;
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+.list-media {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+.item-accordion i {
+    font-size: 1.6rem;
+    width: 4rem;
+    display: inline-block;
+}
+.active i.icon {
+    -webkit-transform: rotate(180deg);
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    right: 5px;
+}
+/*  #Accordian
+===========================================*/
+
+.collapsible-header,
+.collapsible-body {
+    padding: 0;
+    color: #616262;
+}
+.collapsible-header.active {
+    background-color: #ddd;
+}
+.list-media .item {
+    padding: 10px 16px;
+    font-weight: 400;
+}
+.collapsible-body .item-accordion {
+    color: #863a96 !important;
+}
+.list-media a.item {
+    display: block;
+    padding: 15px !important;
+}

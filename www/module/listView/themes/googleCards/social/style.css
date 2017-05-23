@@ -1,0 +1,25 @@
+/*  #Theme Google Cards Social
+===========================================*/
+
+.slider {
+    height: auto;
+}
+.card {
+    margin: 5px 10px;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+.card .item {
+    border-color: transparent;
+}
+.card-bottom {
+    border-top: 1px solid #853A96;
+    overflow: hidden;
+}
+.card-bottom a {
+    font-family: 'Roboto-Medium', sans-serif;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #853A96;
+    margin-top: 15px;
+}

@@ -1,0 +1,54 @@
+/*  #Thema General Media
+===========================================*/
+
+.slidertext i.icon {
+    color: #ddbdda;
+    font-size: 180px;
+}
+a.btn-flat.disabled {
+    color: #ddbdda;
+    position: absolute;
+    font-size: 12px;
+    bottom: 5px;
+    z-index: 9;
+    display: block;
+}
+.slider-pager {
+    bottom: 26px;
+    height: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+p{
+    color: #ddbdda;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 300;
+}
+.slider {
+    height: 100%;
+}
+.slider-slide {
+    display: table;
+}
+.slidertext {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 30px;
+}
+.ion-record:before {
+    color: #ffffff;
+    font-size: 7px;
+}
+.skip {
+  right: 10px;
+}
+.scroll {
+    height: 100%;
+    min-height: 100%;
+}

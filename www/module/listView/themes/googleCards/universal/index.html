@@ -1,0 +1,20 @@
+<!--Theme Google Cards Universal-->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Google Cards Universal Content-->
+    <ion-list ng-click="listViewController.onClick('onItemClick', item, $event)" ng-repeat="(key, item) in listViewController.data">
+        <ion-slide-box on-slide-changed="listViewController.deleteItem(key, true)" show-pager="false">
+            <ion-slide>
+                <!--Google Cards Universal Card-->
+                <div class="card">
+                    <ion-item>
+                        <img class="full-image" ng-src="{{item.image}}" alt="{{item.imageAlt}}" />
+                    </ion-item>
+                </div>
+            </ion-slide>
+            <ion-slide>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

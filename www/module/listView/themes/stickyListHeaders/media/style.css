@@ -1,0 +1,43 @@
+/*  #Theme General List Headers Media
+===========================================*/
+
+h1 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0;
+}
+.sticky h2,
+.sticky p,
+.item-divider i.icon {
+    color: #fff;
+    font-weight: 300;
+}
+.sticky h3 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+}
+.item-divider i.icon {
+    font-size: 30px;
+}
+/*  #Content
+===========================================*/
+
+.sticky.item {
+    background-color: rgba(54, 71, 79, 0.8) !important;
+    border-color: transparent;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+.sticky.item-thumbnail-left {
+    padding-left: 80px;
+    min-height: 80px !important;
+}
+.sticky img {
+    max-height: 56px !important;
+    max-width: 56px !important
+}
+.sticky i.icon {
+    color: #ef4438;
+    font-size: 40px;
+}

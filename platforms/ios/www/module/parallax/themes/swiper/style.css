@@ -1,0 +1,118 @@
+/*  #General Parallax Travel
+===========================================*/
+.scroll {
+  height: 100%;
+}
+h1 {
+  color: #853a96;
+  font-size: 36px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.box {
+  height: 100%;
+  background-position: center !important;
+  background-size: cover;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  transition-duration: 300ms;
+}
+.slider-pager .slider-pager-page {
+      color: #565656;
+}
+.card {
+    box-shadow: none;
+    margin: 0;
+    overflow: visible;
+}
+.slider {
+    height: 100% !important;
+
+}
+#elastic-header{
+  height: 40%;
+  -webkit-transition: all 300ms;
+    transition: all 300ms;
+    transition-duration: 300ms;
+}
+p {
+  padding-bottom: 5px;
+}
+/*  #Parallax Body
+===========================================*/
+.card-top{
+    padding: 10px;
+    display: table;
+}
+.half {
+  display: table-cell;
+}
+.review-block {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  font-size: 10px;
+  text-align: left;
+}
+.review{
+  clear: both;
+  display: block;
+}
+.review i.icon{
+  font-size: 20px;
+  color: #853a96;
+}
+span.price{
+  display: block;
+  clear: both;
+  margin: 10px 0;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20px;
+}
+.socila-share .icon {
+  color: #853a96;
+  font-size: 20px;
+  width: 35px;
+  display: inline-block;
+}
+.card-top .badge-assertive {
+    background-color: #853a96;
+    min-height: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    display: table;
+    top: -32px;
+    z-index: 99999;
+    right: 15px;
+}
+.socila-share {
+  padding-top: 5px;
+  display: block;
+  padding-left: 5px;
+}
+.badge-assertive .icon {
+    color: #fcd736;
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.travel.item {
+    overflow: visible !important;
+    border-bottom: none;
+}
+.item-content.item-text-wrap {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 40px;
+}
+.item-content.item-text-wrap span {
+    font-weight: bold;
+    color: #853a96;
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+}

@@ -1,0 +1,87 @@
+/*  Theme Genaral LoginAndRegister Social
+===========================================*/
+
+img {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    max-width: 50px;
+}
+.form-block {
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 20px;
+}
+.input-field label {
+    line-height: 20px;
+    font-size: 40px !important;
+    color: #ffffff;
+    left: 0;
+    font-weight: 100;
+}
+.input-field label.active {
+    font-size: 12px !important;
+    color: #ffffff;
+    left: 0;
+    font-weight: 100;
+}
+input[type=text],
+input[type=password] {
+    font-size: 40px;
+    font-weight: 100;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: none;
+}
+input[type=text]:focus + label,
+input[type=password]:focus + label {
+    color: #ffffff !important;
+}
+/*  Content
+===========================================*/
+
+.input-field {
+    margin-top: 40px;
+}
+.prefix,
+.input-field .prefix.active {
+    color: #767777;
+    font-size: 28px !important;
+}
+.button-style {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+/* Style Social Network
+===========================================*/
+
+.social {
+  width: 320px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.logo-block {
+    overflow: hidden;
+    margin-top: 50px;
+}
+.scroll {
+  height: 100%;
+}
+.social button{
+  width: 150px;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 5px;
+  display: block;
+  float: left !important;
+}
+.social p {
+  color: #fff;
+  margin: 0;
+}

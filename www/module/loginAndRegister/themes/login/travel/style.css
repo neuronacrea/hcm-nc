@@ -1,0 +1,91 @@
+/* Genaral LoginAndRegister Travel
+===========================================*/
+
+img {
+    margin: 20px auto;
+    display: block;
+    max-width: 90px
+}
+.input-field label {
+    line-height: 20px;
+    font-size: 20px !important;
+    color: #ffffff;
+    font-weight: 100;
+    left: 0;
+}
+.input-field label.active {
+    font-size: 12px !important;
+    color: #ffffff;
+    left: 0;
+    font-weight: 100;
+}
+input[type=text],
+input[type=password] {
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: none;
+}
+input[type=text]:focus + label,
+input[type=password]:focus + label {
+    color: #ffffff !important;
+}
+.input-field {
+    margin-bottom: 25px;
+}
+.prefix,
+.input-field .prefix.active {
+    color: #16b9d4;
+    top: 10px;
+    font-size: 20px !important;
+}
+/*  Content
+===========================================*/
+.form-block {
+  margin: 20px;
+  overflow: hidden;
+}
+.form {
+    background: rgba(224, 226, 226, 0.6);
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 4px;
+}
+.button-form {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #ffffff !important;
+    font-size: 16px;
+}
+.button-form-skip {
+    color: #ffffff !important;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+/* Style Social Network
+===========================================*/
+
+.social {
+  width: 320px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.scroll {
+  height: 100%;
+}
+.social button{
+  width: 150px;
+  padding: 0;
+  letter-spacing: 0;
+  margin: 5px;
+  display: block;
+  float: left !important;
+}
+.social p {
+  color: #fff;
+}

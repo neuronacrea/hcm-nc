@@ -1,0 +1,98 @@
+/*  #Theme General Swipe To Dismiss Media
+===========================================*/
+
+.media {
+    background-color: rgba(38, 50, 56, 0.95) !important;
+    height: 115px!important;
+    border-bottom: 4px solid #EF4437;
+}
+.media h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 300;
+}
+.media p {
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin-left: 83px;
+}
+.media span {
+    font-weight: bold;
+    margin-left: 85px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.media .item {
+    border-color: transparent;
+    padding: 0;
+}
+.container-image {
+    margin-top: 170px;
+}
+.platform-ios .container-image {
+    margin-top: 178px;
+}
+/*  #Content
+===========================================*/
+
+i.icon {
+    font-size: 60px;
+    color: #EF4437;
+    float: left;
+}
+.slider {
+    height: 62px;
+    margin-bottom: 1px;
+}
+.controls {
+    width: 100%;
+    display: table;
+    height: 62px;
+}
+.controls a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #EF4437;
+}
+.controls a:first-child {
+    width: 80%;
+}
+.controls i.icon {
+    font-size: 30px;
+}
+.social-share i.icon {
+    font-size: 24px !important;
+    color: #fff;
+    width: 40px;
+    text-align: center;
+}
+.sticky-block .item-avatar-left img {
+    border-radius: 4px;
+    top: 12px;
+}
+.sticky-block .item {
+    background-color: rgba(55, 71, 79, 0.80);
+    padding: 10px 90px 10px 70px;
+    border-width: 0;
+    min-height: 64px;
+}
+.sticky-block .item h2 {
+    font-weight: 300 !important;
+}
+.sticky-block .item p,
+.sticky-block .item h2 {
+    color: #ffffff;
+    line-height: normal;
+}
+.sticky-block .item p {
+    font-weight: normal;
+}
+.sticky-block span {
+    color: #ffffff !important;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}

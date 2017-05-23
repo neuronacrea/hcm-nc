@@ -1,0 +1,75 @@
+/*  General Genaral LoginAndRegister Register Travel
+======================================================*/
+
+img {
+    max-width: 45px;
+    margin: 5px 15px;
+}
+.form-block a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8fa4ae !important;
+}
+.form-block h1 {
+    font-size: 40px;
+    color: #8fa4ae;
+    text-align: right;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+}
+.input-field {
+    margin-top: 20px;
+}
+.input-field label {
+    font-size: 24px;
+    color: #b0bec5;
+    line-height: 20px;
+    left: 0;
+}
+.input-field label.active {
+    left: 0;
+    line-height: 15px;
+}
+.icon.prefix {
+    top: 8px;
+}
+.input-field label.active,
+input[type=text]:focus + label,
+input[type=password]:focus + label {
+    color: #b0bec5 !important;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    border-bottom: 1px solid #b0bec5 !important;
+    box-shadow: none !important;
+}
+/*  Register travel
+===========================================*/
+
+i.icon {
+    font-size: 28px;
+    color: #e0e2e2;
+}
+input[type=text] {
+    line-height: 44px;
+    font-size: 24px;
+    color: #b0bec5;
+    font-weight: 100;
+    margin: 0;
+}
+.form-block button {
+    font-weight: 400;
+    color: #8fa4ae !important;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.button-form {
+    margin: 15px;
+}
+.form-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 10px;
+    margin: 15px;
+}

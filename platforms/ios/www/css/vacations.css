@@ -1,0 +1,40 @@
+.vacations h6{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: #eda900;
+}
+.vacations .row{margin-bottom: 5px;}
+.vacations .gallery-title{
+    background: #82bc00;
+}
+.schedule-title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    text-align: left;
+}
+.schedule-title h6{
+    margin-bottom: 20px;
+}
+.schedule{
+    margin-top: 30px; 
+}
+.schedule h6{
+    color: #FFF;
+    text-align: center;
+}
+.schedule img{
+    width: 25px;
+    position: relative;
+    top: 9px;
+}
+.schedule h6{color: #FFF;}
+.schedule input{
+    color: rgba(255,255,255,0.2);
+    font-size: 18px;
+}
+.vacations .input-text{text-align: left;}
+.vacations input.input-text{
+    text-align: center
+}

@@ -1,0 +1,45 @@
+<!-- Themes Swipe To Dismiss Shop -->
+<ion-content class="container-image has-header">
+    <!-- Swipe To Dismiss Shop List-->
+    <ion-list>
+        <div class="item-remove-animate chat-item" ng-repeat="item in listViewController.data.items" type="item-text-wrap" ng-click="listViewController.onClick('onItemClick', item, $event)">
+            <ion-slide-box on-slide-changed="listViewController.slideHasChanged($index, item)" show-pager="false">
+                <ion-slide>
+                    <ion-item class="item-thumbnail-left item-text-wrap waves-effect waves-dark waves-block">
+                        <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.description}}</p>
+                        <span class="item-note old-price">{{item.oldPrice}}</span>
+                        <span class="item-note new-price">{{item.newPrice}}</span>
+                    </ion-item>
+                </ion-slide>
+                <ion-slide>
+                    <div class="controls">
+                        <a ng-click="listViewController.deleteItem($index)">
+              {{item.message}}
+            </a>
+                        <a ng-click="listViewController.undo(true)">
+                            <i class="icon {{item.iconUndo}}"></i>
+                        </a>
+                    </div>
+                </ion-slide>
+                <ion-slide></ion-slide>
+            </ion-slide-box>
+        </div>
+    </ion-list>
+    <!--end list-->
+</ion-content>
+<div class="bar bar-footer footer lime">
+    <h1 class="total-price">{{listViewController.data.totalPriceText}}</h1>
+    <span class="total-price right">{{listViewController.data.totalPrice}}</span>
+    <div class="footer-content lime darken-1">
+        <div class="footer-half">
+            <span>{{listViewController.data.cardName}}</span>
+            <h4>{{listViewController.data.headerTitle}}</h4>
+            <p>{{listViewController.data.title}}</p>
+        </div>
+        <div class="footer-half">
+            <button class="btn-flat lime darken-1 waves-effect waves-ligh right">{{listViewController.data.buttonText}}</button>
+        </div>
+    </div>
+</div>

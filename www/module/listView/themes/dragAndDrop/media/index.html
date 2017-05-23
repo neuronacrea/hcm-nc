@@ -1,0 +1,25 @@
+<!-- Themes Dragen And Drop Media -->
+<ion-header-bar class="bar bar-subheader media-content red darken-3">
+    <!-- Dragen And Drop Media Header-->
+    <ion-item class="transparent item-icon-right">
+        <h2>{{listViewController.data.title}}</h2>
+        <p>{{listViewController.data.description}}</p>
+        <span class="item-note">{{listViewController.data.duration}}</span>
+        <i class="icon {{listViewController.data.icon}}"></i>
+    </ion-item>
+</ion-header-bar>
+<!--end-->
+<!-- Drag And Drop Media Content -->
+<ion-content class="drag-and-drop">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <ion-list show-reorder="true">
+        <ion-item class="item-icon-left red darken-4" ng-repeat="item in listViewController.data.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+            <i class="icon {{item.leftIcon}}"></i>
+            <h3>{{item.title}}</h3>
+            <p>{{item.author}}</p>
+            <ion-reorder-button class="icon {{item.rightIcon}} red darken-4" on-reorder="listViewController.reorderItem($fromIndex, $toIndex)">
+            </ion-reorder-button>
+        </ion-item>
+    </ion-list>
+</ion-content>

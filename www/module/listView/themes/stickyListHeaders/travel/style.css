@@ -1,0 +1,38 @@
+/*  #theme Sticky list headers travel
+===========================================*/
+
+.item-divider i.icon {
+    font-size: 24px;
+    line-height: 30px;
+    color: #903e98;
+}
+.item-divider h2 {
+    font-size: 22px;
+    color: #903e98;
+}
+/*  #Content
+===========================================*/
+
+.sticky-contant i.icon {
+    font-size: 20px;
+    color: #F9DD5F;
+}
+.sticky-contant p,
+.sticky-contant h3 {
+    color: #ffffff;
+}
+.sticky-contant h3 {
+    font-size: 22px;
+}
+.sticky-contant.item {
+    max-height: 80px;
+    border-width: 0;
+    border-bottom: 2px solid #f9dd5f;
+    background-color: rgba(148, 148, 148, 0.8);
+    background-blend-mode: multiply;
+}
+.price {
+    font-weight: bold;
+    color: #F9DD5F;
+    font-size: 22px;
+}

@@ -1,0 +1,23 @@
+<!--Theme LoginAndRegister Light-->
+<ion-content class="container-image has-header login">
+    <div class="cover-login">
+        <!--Theme LoginAndRegister Light Logo-->
+        <!--<img ng-src="{{loginController.data.logo}}" />-->
+    </div>
+    <!--Theme LoginAndRegister Light Form-->
+    <div class="form-block">
+        <div class="input-field">
+            <i class="prefix icon {{loginController.data.iconAccount}}"></i>
+            <input id="username" type="text" ng-model="loginController.username">
+            <label for="username">{{loginController.data.username}}</label>
+        </div>
+    </div>
+    <ion-footer-bar class="login-footer">
+        <button class="button-style btn waves-effect waves-light button-login" ng-click="loginController.onClick('onLogin')">
+            {{loginController.data.login}} !!
+        </button>
+        <div class="login-link">
+            <a href="#nogo">Volver</a>
+        </div>
+    </ion-footer-bar>
+</ion-content>

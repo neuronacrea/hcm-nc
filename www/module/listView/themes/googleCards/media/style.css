@@ -1,0 +1,73 @@
+/*  #Theme Google Cards Media
+===========================================*/
+
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+h2 {
+    color: #ffffff !important;
+}
+i.icon {
+    font-size: 20px;
+    width: 35px;
+    display: inline-block;
+}
+.card h2 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 5px !important;
+    margin-top: 0 !important;
+}
+.card p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 25px !important;
+    line-height: 15px;
+}
+.card span {
+    font-weight: normal;
+    font-style: italic;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+}
+.slider {
+    height: auto;
+}
+/*  #Content
+===========================================*/
+
+.card {
+    background-color: rgba(183, 32, 37, 0.8);
+    color: #fff;
+    margin: 10px;
+    -webkit-animation: fadeIn 100ms;
+    animation: fadeIn 100ms;
+}
+.card .item-body {
+    padding: 10px;
+}
+.card-action-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.card-image {
+    width: 130px;
+    height: 220px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.card-image:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(182, 32, 37, 0.5);
+}

@@ -1,0 +1,18 @@
+<!--Theme Wizard Travel -->
+<ion-content class="has-header blue-grey darken-4">
+  <ion-slide-box>
+    <ion-slide ng-repeat="item in wizardController.data.items">
+      <div class="slidertext">
+        <img src="{{item.image}}">
+        </div>
+      </div>
+      <div class="wizard-travel-description text-center">
+        <h1>{{item.title}}</h1>
+        <p>{{item.description}}</p>
+      </div>
+    </ion-slide>
+  </ion-slide-box>
+  <!-- <button ng-if="item.button">{{item.button}}</button> -->
+  <button class="button-slider waves-effect waves-light waves-block btn yellow accent-3"
+    ng-click= "wizardController.onClick('onSignIn', $event)">{{wizardController.data.btnSignIn}}</button>
+</ion-content>

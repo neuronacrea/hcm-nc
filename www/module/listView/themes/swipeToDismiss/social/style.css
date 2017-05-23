@@ -1,0 +1,50 @@
+/*  #Theme Swipe To Dismiss Socail
+===========================================*/
+
+.slider {
+    height: 160px;
+    margin-bottom: 1px;
+}
+h2 {
+    line-height: 40px;
+    color: #434343;
+}
+.container-image .list {
+    padding-top: 0;
+}
+.container-image .list p {
+    color: #767777;
+    font-weight: normal;
+}
+i.icon {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.item-text-wrap {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 170px;
+}
+.control {
+    height: 100%;
+    margin-bottom: 5px !important;
+    display: table;
+    width: 100%;
+    background-color: #ffffff;
+}
+.control a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.control p {
+    color: #ffffff !important;
+}
+.control a:first-child {
+    width: 75%;
+    color: #783293;
+    font-size: 20px;
+}
+.control a:last-child {
+    background-color: #853A96;
+    color: #ffffff;
+}

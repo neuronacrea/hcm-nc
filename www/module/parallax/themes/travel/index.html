@@ -1,0 +1,50 @@
+<!--- Theme Parallax Travel -->
+<ion-content delegate-handle="scroller" elastic-header="elastic-header" class="has-header">
+    <!--- Parallax Header -->
+    <div id="elastic-header" class="container-hearder-image"></div>
+
+    <!--- Parallax Content -->
+    <ion-list>
+        <div class="card">
+            <!--- Parallx Social -->
+            <div class="card-top">
+                <span class="socila-share">
+                  <i class="icon {{parallaxController.data.iconLike}}"
+                    ng-click="parallaxController.onClick('onLike', null, $event)"></i>
+                  <i class="icon {{parallaxController.data.iconFavorite}}"
+                      ng-click="parallaxController.onClick('onFavorite', null, $event)"></i>
+                  <i class="icon  {{parallaxController.data.iconShare}}"
+                      ng-click="parallaxController.onClick('onShare', null, $event)"></i>
+                </span>
+                <span class="badge badge-assertive" ng-click="parallaxController.onClick('onItemClick', null, $event)">
+                    <i class="icon {{parallaxController.data.iconButton}}"></i>
+                </span>
+            </div>
+
+            <!--- Parallx Rate -->
+            <div class="card-rate">
+                <span class="rate-star">
+                  <i class="icon" ng-class="parallaxController.starClass(star)" ng-repeat="star in parallaxController.data.iconsStar" ng-click="parallaxController.onClick('onRates', $index, $event)"></i>
+                </span>
+                <span class="reviews">{{parallaxController.data.reviews}}</span>
+            </div>
+            <!--- Parallx Block Content -->
+            <div class="item-content item-text-wrap">
+                <p>{{parallaxController.data.description}}</p>
+            </div>
+
+            <!--- Parallx Block Content -->
+            <div class="item-content item-text-wrap">
+                <div ng-repeat="item in parallaxController.data.items">
+                    <span>{{item.name}}</span>
+                    <p>{{item.value}}</p>
+                </div>
+            </div>
+
+            <!--- Parallx Block Content -->
+            <div class="item-content item-text-wrap">
+                <p>{{parallaxController.data.description2}}</p>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>

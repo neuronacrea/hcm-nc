@@ -1,0 +1,58 @@
+<!--Theme LoginAndRegister Travel-->
+<ion-content class="container-image has-header">
+    <!--Theme LoginAndRegister Travel Logo-->
+    <img ng-src="{{loginController.data.logo}}" />
+    <!--Theme LoginAndRegister Travel Form-->
+    <div class="form-block">
+        <div class="form">
+            <div class="input-field">
+                <i class="icon prefix {{loginController.data.iconAccount}}"></i>
+                <input id="username" type="text" ng-model="loginController.username">
+                <label for="username">{{loginController.data.username}}</label>
+            </div>
+            <div class="input-field">
+                <i class="icon prefix {{loginController.data.iconLock}}"></i>
+                <input id="password" type="password" ng-model="loginController.password">
+                <label for="password">{{loginController.data.password}}</label>
+            </div>
+        </div>
+        <button
+          class="button-form waves-effect waves-light btn-flat light-blue right"
+          ng-click="loginController.onClick('onRegister')">
+          {{loginController.data.register}}
+        </button>
+        <button
+          class="button-form waves-effect waves-light btn-flat light-blue right"
+          ng-click="loginController.onClick('onLogin')">
+          {{loginController.data.login}}
+        </button>
+    </div>
+    <div class="social">
+      <p>{{loginController.data.signInWith}}</p>
+      <button
+        class="btn waves-effect waves-light right icon-left icon icon-facebook-box indigo darken-1"
+        ng-click="loginController.onClick('onFacebook')">
+        {{loginController.data.facebook}}
+      </button>
+      <button
+        class="btn waves-effect waves-light right icon-left icon icon-twitter-box blue lighten-2"
+        ng-click="loginController.onClick('onTwitter')">
+        {{loginController.data.twitter}}
+      </button>
+      <button
+        class="btn waves-effect waves-light right icon-left icon icon-google-plus-box deep-orange darken-4"
+        ng-click="loginController.onClick('onGoogle')">
+        {{loginController.data.google}}
+      </button>
+      <button
+        class="btn waves-effect waves-light right icon-left icon icon-pinterest deep-orange accent-3"
+        ng-click="loginController.onClick('onPinterest')">
+        {{loginController.data.pinterest}}
+      </button>
+    </div>
+    <button
+      class="button-form-skip waves-effect waves-light btn-flat disabled right"
+      ng-click="loginController.onClick('onSkip')">
+      {{loginController.data.skip}}
+    </button>
+</ion-content>

@@ -1,0 +1,26 @@
+<!-- Theme Expandable Travel -->
+<ion-content class="has-header container-image">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <ion-list>
+        <!-- Expandable Travel Heeader-->
+        <div class="container-hearder-image">
+            <h1>{{listViewController.data.title}}</h1>
+        </div>
+        <!-- Expandable Travel Content-->
+        <ul class="collapsible" data-collapsible="expandable">
+            <li ng-repeat="group in listViewController.data.items">
+                <ion-item class="collapsible-header article-block">
+                    <i class="icon {{group.icon}}"></i>
+                    <p>{{group.title}}</p>
+                </ion-item>
+                <!-- Expandable Travel Accordion-->
+                <div class="collapsible-body">
+                    <a class="item item-accordion article-list waves-effect waves-light" href="#" ng-repeat="item in group.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                        <span>{{item}}</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </ion-list>
+</ion-content>

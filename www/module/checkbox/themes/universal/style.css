@@ -1,0 +1,72 @@
+/*  #General Universal Checkbox
+===========================================*/
+
+.list-check .item {
+    border-color: transparent;
+}
+.checkbox-block i.icon {
+    font-size: 1.5em;
+    color: #767777;
+}
+.checkbox-block .btn-flat {
+    padding: 0;
+}
+input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #903e98;
+    background-color: #903e98;
+}
+input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #903e98 !important;
+}
+input[type="checkbox"] + label {
+    line-height: 23px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #434343;
+}
+input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+/*  #Checkbox Box List
+===========================================*/
+
+.check-box-list {
+    overflow: hidden;
+    width: 100%;
+}
+.check-box-list > .item {
+    width: 33.3%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+.check-box-list .item >[type="checkbox"]+label {
+    height: 20px;
+    padding-left: 20px;
+}
+/*  #Checkbox Box Dark List
+===========================================*/
+
+.dark > input[type="checkbox"] + label {
+    color: #ffffff;
+}
+.dark i.icon {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.dark > input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+.dark > input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #ffffff !important;
+}
+.dark >input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238;
+}
+.dark > .btn-flat {
+    padding: 0;
+}

@@ -1,0 +1,36 @@
+<!--Theme Google Cards Media-->
+<ion-content class="has-header container-image">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Google Cards Media List Content-->
+    <ion-list ng-click="listViewController.onClick('onItemClick', item, $event)" ng-repeat="(key, item) in listViewController.data.items">
+        <ion-slide-box on-slide-changed="listViewController.deleteItem(key, true)" show-pager="false">
+            <ion-slide>
+                <!--Google Cards Media Card-->
+                <div class="card">
+                    <div class="item-body">
+                        <div class="card-image">
+                            <img class="activator" ng-src="{{item.image}}" alt="{{item.title}}" />
+                        </div>
+                        <div class="card-content">
+                            <h2>{{item.title}}</h2>
+                            <span>{{item.description}}</span>
+                            <span>{{item.shortDescription}}</span>
+                            <div class="item-text-wrap">
+                                <p>{{item.longDescription}}</p>
+                            </div>
+                        </div>
+                        <!--Social Share-->
+                        <div class="card-action-button">
+                            <i ng-if="item.iconLike" class="icon {{item.iconLike}}" ng-click="listViewController.onClick('onLike', item, $event)"></i>
+                            <i ng-if="item.iconFavorite" class="icon {{item.iconFavorite}}" ng-click="listViewController.onClick('onFavorite', item, $event)"></i>
+                            <i ng-if="item.iconShare" class="icon {{item.iconShare}}" ng-click="listViewController.onClick('onShare', item, $event)"></i>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

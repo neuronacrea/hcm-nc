@@ -1,0 +1,439 @@
+/*  #Call Fonts
+===========================================*/
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello/fontello.eot');
+    src: url('../font/fontello/fontello.eot') format('embedded-opentype'), url('../font/fontello/fontello.woff') format('woff'), url('../font/fontello/fontello.ttf') format('truetype'), url('../font/fontello/fontello.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*  #Ionic Descript
+===========================================*/
+
+.ionic-descript,
+.ionic-descript h2 {
+    color: #fde800;
+}
+.ionic-descript {
+    padding: 0 20px;
+}
+.ionic-descript h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.ionic-documentation {
+    margin-top: 30%;
+    display: block;
+    text-decoration: underline;
+    color: #fff;
+    padding: 0 20px;
+}
+/*  #Button Buy Now
+===========================================*/
+
+.buy-now.btn {
+    color: #ffffff;
+    padding: 0 10px;
+    box-shadow: none;
+    border: 1px solid #ffffff;
+    margin-top: 5px;
+}
+/*  #General Theme
+===========================================*/
+
+body,
+label,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p,
+a,
+.bar.bar-stable .title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.bar {
+    height: 65px !important;
+}
+.has-header{top: 0 !important;}
+.bar-subheader {
+    top: 56px !important;
+}
+.has-header{background:transparent;}
+.main-menu.item,
+.main-menu.item-complex .item-content {
+    background-color: transparent !important;
+    padding-left: 15px;
+}
+.main-menu span,
+.main-menu i.icon {
+    font-size: 20px;
+}
+.list {
+    padding-top: 0;
+}
+/*  #General Header
+===========================================*/
+
+.bar.bar-stable .title {
+    color: #FFF;
+    line-height: 50px;
+    font-size: 20px;
+    left: 40px !important;
+    text-align: left;
+    top: 8px;
+}
+.title{
+    color: #FFF;
+    line-height: 65px !important;
+    height: 100% !important;
+}
+.buttons.buttons-left.header-item,
+.bar-stable .button.button-clear {
+    padding: 0 5px;
+    color: #ffffff;
+    max-height: 45px;
+    opacity: 0.65;
+}
+.back-text {
+    display: none !important;
+}
+#toast-container {
+    text-align: center;
+}
+.custom-toast {
+    width: auto;
+    display: inline-block;
+    margin-bottom: 0.8em;
+    word-break: break-all;
+}
+.container-image,
+.left-menu-background,
+.container-hearder-image,
+.container-body-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-menu-background {
+    background-image: url('../img/left-menu-background.jpg');
+}
+
+.descript {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.descript .scroll {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*  #Shape Images Size
+===========================================*/
+
+.shape-img-block {
+    width: 50%;
+    float: left;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.shape-img-block img {
+    max-width: 100px;
+}
+/*  #Style Spinner
+===========================================*/
+
+.spinner-view .spinner img {
+  width: 100px;
+  height: 100px;
+  margin: 50% auto 0;
+  display: block;
+}
+.spinner-view .scroll {
+  height: 100%;
+}
+.spinner-view .slider {
+  height: 100%;
+  background-color: #9c27b0;
+}
+/*  #Left Menu Button BACK
+===========================================*/
+
+.menu-background-own {
+    background-color: rgba(156, 39, 176, 0.40);
+}
+.menu-background-two {
+    background-color: rgba(121, 121, 121, 0.40);
+}
+.menu-panel span {
+    color: #fde800;
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.back-menu.btn {
+    border: 1px solid #fde800;
+    margin: 50% auto 0;
+    font-size: 16px;
+    color: #fde800;
+    font-weight: bold;
+}
+.back-menu.btn i.left {
+    margin-right: 0;
+}
+.button-back{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+/*  #Ios Style
+===========================================*/
+
+/*.platform-ios .has-header {
+    top: 0px!important;
+}*/
+.platform-ios .bar-subheader {
+    top: 64px!important;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+    margin-top: 10px;
+}
+/*  General Background
+===========================================*/
+.gBk{
+    background: url("../img/background/generalBackground.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.salary-cover{
+    background: #b00060 !important;
+    padding-top: 70px !important;
+}
+.vacations-cover{
+    background: #82bc00 !important;
+}
+.news-cover{
+    background: #3aa3ab !important;
+}
+.general-cover h1{
+    text-align: center;
+    padding-top: 13px;
+}
+.general-cover h6{
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    margin-top: 0;
+    top: 47%;
+}
+.certificates-cover{
+    background: #009d91 !important;
+}
+.queries-cover{
+    background: #ff6a00 !important;
+}
+.viatics-cover{
+    background: #3fae29 !important;
+}
+.calendar-cover{
+    background: #eda900 !important;
+}
+.salary-cover h1{
+    text-align: center;
+    top: 16%;
+    position: relative;
+    padding-top: 0;
+}
+.salary-cover h6{
+    top: 19%;
+}
+.button{
+    min-height: 47px !important;}
+.button-heinsohn{
+    border: none;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 16px !important;
+}
+.button-login{
+    background: #82bc00;
+    opacity: 0.8;
+}
+.button-absenteeism{
+    background: #d50f67;
+}
+.button-queries{
+    background: #b00060;
+}
+.vacations .button-schedule{
+    background: #3aa3ab;
+}
+.button-certificates{
+    background: #b88b1c;
+}
+.button-circle{
+    border-radius: 50%;
+    border: none;
+}
+.button-plus{
+    width: 40px;
+    height: 40px;
+    background-color: #82bc00;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    margin: auto;
+}
+.button-more-down,
+.button-edit{
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+    background-color: #4fb3ab;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+} 
+.button-more-down{
+    background-image: url("../img/arrow-down.png");
+}
+.button-edit{
+    background-image: url("../img/edit.png");
+    min-height: 45px !important;
+    min-width: 45px !important;
+}
+.bar-footer{
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.bar-footer .row{
+    padding: 0 5px;
+}
+.white-footer{
+    background: rgba(255,255,255,0.1);
+    color: #FFF;
+}
+.footer-calendar .button-more-down,
+.salary-footer .button-more-down{
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+input{box-sizing: border-box;}
+.input-text{
+    background: rgba(0,0,0,.25) !important;
+    color: rgba(255,255,255,.65);
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    border: none !important;
+    box-sizing: border-box !important;
+}
+input-text-center{text-align: center;}
+.input-select{
+    text-align: left !important;
+    background-image: url('../img/input-arrows.png') !important;
+    background-color: rgba(0,0,0,.25) !important;
+    background-repeat: no-repeat !important;
+    background-position: 98% !important;
+    background-size: 12px !important; 
+    padding-left: 10px;
+}
+textarea.input-text{
+    height: 100px;
+    text-align: left;
+}
+input[type=text],
+input[type=password]{color: rgba(255,255,255,.65) !important;}
+/*Menu*/
+.menu-h-left{
+    background: transparent !important;
+}
+.h-left{background: transparent !important;}
+.main-menu.item{
+    border: none;
+    padding-right: 15px;
+    width: 100%;
+}
+.main-menu.item:hover, .main-menu.item:active{
+    background-color: #339999 !important;
+}
+.grey.lighten-3{
+    background: rgba(51,0,51,.95) !important;
+    padding-top: 65px;
+}
+.grey.lighten-3 a{
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+.main-menu .item{
+    margin: 0;
+    border: none;
+}
+.bar-stable .button.button-icon{
+    color: rgba(255,255,255,.65);
+}
+.bar .buttons-left span{
+    position: relative;
+    top: 4px;
+}
+.bar.bar-stable{
+    background-color: rgba(255,255,255,.15) !important;
+    border: none;
+    background-image: none;
+}
+/**/
+#elastic-header{
+    border: none;
+    margin-bottom: 15px;
+    height: 190px;
+    position: relative;
+    padding-top: 100px;
+}
+.salary-card h5,
+.salary-card h6,
+.profile .vacations h6,
+.news h6,
+.homeworks h6{color: #FFF}
+h6.upload-pic{
+    color: #b9be10 !important;
+    text-align: left;
+    margin-left: 60px;
+}
+.last-row{
+    margin-bottom: 70px !important;
+}
+.bar-header{background: rgba(255,255,255,.2);}
+.profile-view{background: url('../img/background/generalBackground.jpg') no-repeat center #FFF;}
+
+div[ class = 'title title-center header-item' ],
+button[ class = 'button back-button buttons button-clear button-back header-item' ] {
+    color: white !important;
+}
+
+div[ class = 'title title-center header-item' ]::before {
+    content: "";
+    background-size: 28px;
+    background-image: url(../img/logo_hbt.png);
+    background-position-y: 3px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+}
+
+div[ class = 'title title-center header-item' ]{
+    left: 0px !important;
+    right: 0px !important;
+}

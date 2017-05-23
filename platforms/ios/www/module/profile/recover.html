@@ -1,0 +1,56 @@
+<ion-view view-title="Recuperar Contraseña" ng-controller="RecoverController" cache-view="false">
+<!--Theme LoginAndRegister Light-->
+    <ion-content class="container-image has-header login recover">
+
+        <!--Theme LoginAndRegister Light Form-->
+        <form name="form">
+            <div class="form-block form-recover">
+                 <div class="row">
+                        <div class="col">
+                            <input ng-model="user.username" type="text" class="input-text" placeholder="Nombre Usuario:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre Usuario:'" id="nombreUsuarioRecover">
+                            <span class="error" ng-show="errorUser">{{user.mensajeObligatorio}}</span>
+                        </div>
+                  </div>
+                  <div class="row" >
+                        <div class="col">
+                            <select class="input-text input-select" id="tipoCertificado" style="display:initial" 
+                                    ng-model="user.tipoIdentificacion">
+                                <option value="" selected>Tipo Identificación:</option>
+                                <option value="C">Cedula Ciudadania</option>
+                                <option value="D">Desconocido</option>
+                                <option value="E">Cedula de Extranjeria</option>
+                                <option value="F">RUT</option>
+                                <option value="N">NIT</option>
+                                <option value="P">Pasaporte</option>
+                                <option value="R">Registro Civil</option>
+                                <option value="T">Tarjeta de Identidad</option>
+                                <option value="U">NUIP</option>
+                            </select>
+                            <span class="error" ng-show="errorTipoIdentificacion">{{user.mensajeObligatorio}}</span>
+                        </div>
+                 </div>
+                 <div class="row" >
+                        <div class="col">
+                            <input ng-model="user.identificacion" type="text" class="input-text" placeholder="No. Identificacion:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'No. Identificacion:'" id="identificacionRecover">
+                            <span class="error" ng-show="errorIdentificacion">{{user.mensajeObligatorio}}</span>
+                        </div>
+                 </div>
+                 <div class="row" >
+                        <div class="col">
+                            <h6>Fecha Nacimiento:</h6>
+                            <input ng-model="user.fechaNacimiento" type="date" class="input-text input-calendar" placeholder="FechaNacimiento:" id="fechaNacimiento">                            
+                            <span class="error" ng-show="errorfecha">{{user.mensajeObligatorio}}</span>
+                        </div>
+                 </div>
+                <div class="row">
+                    <div class="col btn-login">
+                        <button ng-click='ingresar();' class="button-style btn waves-effect waves-light button-login" type="submit">
+                            Enviar
+                        </button>
+                    </div>    
+                </div>
+            </div>
+        </form>
+
+    </ion-content>
+</ion-view>

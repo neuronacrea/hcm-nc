@@ -1,0 +1,28 @@
+<ion-view view-title="Detalle Salario" ng-controller="SalaryController">
+    <!-- Theme Parallax Media --> 
+    <ion-content delegate-handle="scroller" elastic-header="elastic-header" class="salary gBk has-header">
+        <button class="prev-slide icon ion-ios-arrow-left waves-effect waves-light" ng-click="atras()"></button>
+        <button class="next-slide icon ion-ios-arrow-right waves-effect waves-light" ng-click="adelante()" id="siguiente"></button>
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+            <ion-slide>
+                <!-- Parallax Media  Header-->
+                <div id="elastic-header" class="container-hearder-image general-cover salary-cover">
+                    <h6>Neto a pagar</h6>
+                    <h1>{{salary.total | currency:"$"}}</h1>
+                    <h6>{{salary.fecha}}</h6>
+                </div>
+                <!-- Parallax Media List-->
+                <ion-list class="list-salary" >
+                    <div id="divContenedor" class="container-body-image">
+                        
+                    </div>                    
+                </ion-list>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+    <style>
+        .slider {
+            overflow: inherit;
+        }
+    </style>
+</ion-view>

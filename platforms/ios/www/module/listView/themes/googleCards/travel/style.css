@@ -1,0 +1,51 @@
+/*  #Theme Google Cards Travel
+===========================================*/
+
+h2,
+p, 
+span.card-title {
+    font-weight: 400;
+}
+h2 {
+    font-size: 24px !important;
+    color: #8fa4ae;
+    margin-bottom: 5px;
+    line-height: normal !important;
+}
+p {
+    color: #455a64 !important;
+}
+.slider {
+    height: auto;
+}
+/*  #Content
+===========================================*/
+
+.card {
+    margin: 10px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+span.card-title {
+    right: 0 !important;
+    left: auto !important;
+}
+.card-content {
+    text-align: right;
+    color: #000;
+}
+.card-action {
+    border-top: none !important;
+    padding: 0 !important;
+}
+.card .card-action a {
+    font-weight: normal;
+    font-size: 14px;
+    color: #853A96;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    line-height: 25px;
+}
+.card-action > a:last-child {
+    margin-right: 5px;
+}

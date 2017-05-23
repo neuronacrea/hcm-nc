@@ -1,0 +1,32 @@
+/*  #Theme Sticky list headers social
+===========================================*/
+
+.item-divider h2 {
+    color: #F9DD5F;
+    font-weight: 300;
+}
+.item-divider.item {
+    background-color: #424242;
+    color: #F9DD5F;
+    padding: 15px;
+    font-weight: 300;
+    border-bottom: 1px solid #ddd;
+}
+.item-avatar-right i.icon {
+    margin-top: 10px;
+    display: inline-block;
+    color: #863a96;
+    width: 30px;
+}
+.item-avatar-right h3 {
+    color: #424242;
+    line-height: 35px;
+}
+.item-avatar-right p {
+    font-weight: normal;
+    text-align: justify;
+}
+.item-body {
+    width: 100%;
+    padding: 0;
+}

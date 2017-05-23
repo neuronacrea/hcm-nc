@@ -1,0 +1,22 @@
+/*  #Theme Appearance animation (Alpha)
+================================================*/
+
+h2 {
+    line-height: 2.4em;
+}
+i.icon {
+    font-size: 25px !important;
+}
+/*  #Theme Appearance animation (Alpha) fadeIn
+================================================*/
+
+.chat-item.ng-enter {
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.chat-item.ng-enter-stagger {
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+}

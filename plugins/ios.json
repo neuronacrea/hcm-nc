@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "heinsohnhc.com"
+        }
+    },
+    "dependent_plugins": {}
+}

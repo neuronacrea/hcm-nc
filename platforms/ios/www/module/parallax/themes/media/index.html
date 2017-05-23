@@ -1,0 +1,35 @@
+<!-- Theme Parallax Media --> 
+<ion-content delegate-handle="scroller" elastic-header="elastic-header" class="has-header">
+    <!-- Parallax Media  Header-->
+    <div id="elastic-header" class="container-hearder-image">
+        <!-- Parallax Media  Social Shere-->
+        <div class="share right">
+            <i class="icon {{parallaxController.data.iconLike}}" ng-click="parallaxController.onClick('onLike', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconFavorite}}" ng-click="parallaxController.onClick('onFavorite', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconShare}}" ng-click="parallaxController.onClick('onShare', item, $event)"></i>
+        </div>
+        <!-- Parallax Media  Title-->
+        <div class="parallax-title">
+            <h1>{{parallaxController.data.title}}</h1>
+            <h2>{{parallaxController.data.description}}</h2>
+        </div>
+        <!-- Parallax Media  Play Button-->
+        <div class="play-block">
+            <i class="icon {{parallaxController.data.iconSkipPrevious}}" ng-click="parallaxController.onClick('onPrevious', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconPlay}}" ng-click="parallaxController.onClick('onPlay', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconSkipNext}}" ng-click="parallaxController.onClick('onNext', item, $event)"></i>
+        </div>
+    </div>
+    <!-- Parallax Media List-->
+    <ion-list>
+        <div class="container-body-image">
+            <a href="#" class="item item-thumbnail-left item-icon-right waves-effect waves-light" ng-repeat="item in parallaxController.data.items" ng-click="parallaxController.onClick('onItemClick', item, $event)">
+                <img ng-src="{{item.image}}" alt="{{item.imageAlt}}" />
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <span>{{item.duration}}</span>
+                <i class="icon {{parallaxController.data.iconPlay}}"></i>
+            </a>
+        </div>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,23 @@
+.content-certificate{
+    padding-top: 20px;
+}
+.content-certificate .row{
+    margin-bottom: 5px;
+}
+.content-certificate select{
+    display: block;
+    margin-bottom: 15px;
+}
+.content-certificate input[type=text]{
+    font-size: 14px !important;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.button-certificates.activated{background-color: rgb(214, 168, 55)}
+.button-certificates{
+    min-height: 47px !important;
+}
+.certificates-footer{
+    height: 65px;
+    margin-bottom: 20px;
+}

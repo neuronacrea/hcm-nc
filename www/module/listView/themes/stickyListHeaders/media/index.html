@@ -1,0 +1,20 @@
+  <!--Theme Sticky List Headers Media-->
+<ion-content class="has-header container-image">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Sticky List Headers Media-->
+    <ion-list ng-repeat="group in listViewController.data.items" scroll-event-interval="5">
+        <ion-item class="item-divider red item-icon-right" ion-affix data-affix-within-parent-with-class="list">
+            <h1>{{group.title}}</h1>
+            <i class="icon {{group.icon}}" ng-click="listViewController.onClick('onGroup', group, $event)"></i>
+        </ion-item>
+        <!--Sticky List Headers Media Content-->
+        <ion-item class="item-thumbnail-left item-icon-right transparent sticky waves-effect waves-light waves-block" ng-repeat="item in group.items" ng-click="listViewController.onClick('onPlay', item, $event)">
+            <img ng-src="{{item.image}}" alt="{{item.title}}" />
+            <h2>{{item.description}}</h2>
+            <h3>{{item.title}}</h3>
+            <p>{{item.shortDescription}}</p>
+            <i class="icon {{item.icon}}"></i>
+        </ion-item>
+    </ion-list>
+</ion-content>

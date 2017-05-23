@@ -1,0 +1,29 @@
+/*  #Theme Swipe To Dismiss Universal
+===========================================*/
+
+h2 {
+    font-weight: 400 !important;
+    color: #616262;
+    line-height: 36px;
+}
+.icon {
+    font-size: 24px !important;
+    color: #616262;
+}
+.slider {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+.slider .item {
+    border-color: transparent;
+}
+.swipe {
+    display: table;
+    width: 100%;
+}
+.swipe a {
+    height: 70px;
+    width: 50%;
+    display: table-cell;
+    color: #000000 !important;
+}

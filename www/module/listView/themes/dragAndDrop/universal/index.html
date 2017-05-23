@@ -1,0 +1,15 @@
+<!-- Themes Dragen And Drop Universal -->
+<ion-content class="has-header">
+    <!-- Themes Dragen And Drop Universal Refresher -->
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!-- Themes Dragen And Drop Universal List -->
+    <ion-list show-reorder="true">
+        <ion-item href="#" class="item-avatar list-name" ng-repeat="item in listViewController.data.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+            <img ng-src="{{item.image}}" alt="{{item.title}}" />
+            <h2>{{item.title}}</h2>
+            <ion-reorder-button class="icon {{item.rightIcon}}" on-reorder="  listViewController.reorderItem($fromIndex, $toIndex)">
+            </ion-reorder-button>
+        </ion-item>
+    </ion-list>
+</ion-content>

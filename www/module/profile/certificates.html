@@ -1,0 +1,48 @@
+<ion-view view-title="Solicitud de certificados" ng-controller="CertificadoController" cache-view="false">
+    <!-- Theme Parallax Media --> 
+    <ion-content delegate-handle="scroller" elastic-header="elastic-header" class="salary gBk certificate">
+        <!-- Parallax Media  Header-->
+        <div id="elastic-header" class="container-hearder-image general-cover certificates-cover">
+            <h1>CERTIFICADOS</h1>
+        </div>
+        <!-- Parallax Media List-->
+        <div class="content-certificate">
+            <div class="row">
+                <div class="col">
+                    <select class="input-text input-select" ng-model="criterio" ng-change='seleccionarCertificado();'
+                            id="tiposCertificados">
+                        <option value="" id="sinCertificado">Certificado:</option>
+                        <option value="certificadoLaboral" id="certificadoLaboral">Certificado Laboral</option>
+                        <option value="certificadoIngresos" id="certificadoIngresos">Certificado Ingreso y Retenciones</option>
+                    </select>
+                    <span class="error" ng-show="errorTipos">{{certificado.mensajeObligatorio}}</span>
+                </div>
+            </div>
+            <div class="row" ng-show="certificado.certificadoLaboral">
+                <div class="col">
+                    <select class="input-text input-select" id="tipoCertificado">
+                        <option value="">Tipo de certificado:</option>
+                    </select>
+                    <span class="error" ng-show="errorTipo">{{certificado.mensajeObligatorio}}</span>
+                </div>
+            </div>
+            <div class="row" ng-show="certificado.certificadoLaboral">
+                <div class="col">
+                    <input ng-model="certificado.expedido" type="text" class="input-text input-select" placeholder="Expedido A:">
+                </div>
+            </div>
+            <div class="row" ng-show="certificado.certificadoLaboral">
+                <div class="col">
+                    <input ng-model="certificado.contacto" type="text" class="input-text input-select" placeholder="Contacto:">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <footer class="bar bar-footer certificates-footer">
+        <div class="row">
+            <div class="col">
+                <button ng-click='generar();' class="button button-block button-heinsohn button-certificates waves-effect waves-light">Generar certificado</button>
+            </div>
+        </div>
+    </footer>
+</ion-view>

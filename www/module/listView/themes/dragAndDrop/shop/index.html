@@ -1,0 +1,35 @@
+<!-- Themes Dragen And Drop Shop -->
+<ion-header-bar class="bar bar-subheader container-hearder-image">
+    <!-- Dragen And Drop Shop Header-->
+    <div class="half">
+        <h1>{{listViewController.data.title}}</h1>
+        <p>{{listViewController.data.description}}</p>
+    </div>
+    <div class="half">
+        <span class="right">{{listViewController.data.price}}</span>
+        <button class="lime waves-effect btn right waves-effect waves-light" ng-click="listViewController.onClick('onProceed', item, $event)">
+        {{listViewController.data.buttonText}}
+      </button>
+    </div>
+</ion-header-bar>
+<!-- Dragen And Drop Shop Content-->
+<ion-content class="content-list">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!-- Dragen And Drop Shop List-->
+    <ion-list show-reorder="true">
+        <ion-item ng-repeat="item in listViewController.data.items" class="item-complex item-thumbnail-left item-icon-right" ng-click="listViewController.onClick('onItemClick', item, $event)">
+            <img ng-src="{{item.image}}" />
+            <h1>{{item.title}}</h1>
+            <h2 class="text-right">{{item.oldPrice}}</h2>
+            <h3 class="text-right">{{item.newPrice}}</h3>
+            <!-- Dragen And Drop Seller And Shipping-->
+            <span>
+              <p class="left">{{item.seller}} {{item.mark}}</p>
+              <p class="right">Free shipping</p>
+            </span>
+            <ion-reorder-button class="icon {{item.rightIcon}} lime" on-reorder="listViewController.reorderItem($fromIndex, $toIndex)">
+            </ion-reorder-button>
+        </ion-item>
+    </ion-list>
+</ion-content>

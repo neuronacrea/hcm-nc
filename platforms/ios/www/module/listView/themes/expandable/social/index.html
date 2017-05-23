@@ -1,0 +1,38 @@
+<!-- Themes Expandable Social -->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!-- Expandable Social Header-->
+    <div class="container-hearder-image">
+        <ion-item class="item-avatar block-avatar transparent">
+            <img ng-src="{{listViewController.data.avatar}}" alt="{{listViewController.data.avatarAlt}}" />
+            <h2>{{listViewController.data.title}}</h2>
+            <p>{{listViewController.data.description}}</p>
+        </ion-item>
+    </div>
+    <ion-list>
+        <!-- Expandable Social Content-->
+        <ul class="collapsible" data-collapsible="expandable">
+            <li ng-repeat="group in listViewController.data.items">
+                <div class="collapsible-header">
+                    <ion-item class="item-icon-left block-header item-icon-right transparent">
+                        <i class="icon {{group.icon}}"></i>
+                        <h2>{{group.title}}</h2>
+                        <p>{{group.description}}</p>
+                        <i class="icon icon-chevron-down"></i>
+                    </ion-item>
+                </div>
+                <!-- Expandable Social Accordion-->
+                <div class="collapsible-body">
+                    <div class="item-accordion" ng-repeat="item in group.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                        <a href="#" class="item item-avatar item-icon-right waves-effect waves-block waves-light">
+                            <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                            <h2>{{item.title}}</h2>
+                            <i class="icon {{item.rightIcon}}"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </ion-list>
+</ion-content>

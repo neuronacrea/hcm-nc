@@ -1,0 +1,27 @@
+/*  #General Travel
+===========================================*/
+
+.checkbox-block .item {
+    border-color: transparent;
+    padding: 5px 20px;
+    background-color: #263238;
+}
+input[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #fcd736;
+    background-color: #fcd736;
+}
+input[type="checkbox"].filled-in:not(:checked)+label:after {
+    border: 2px solid #fcd736 !important;
+}
+input[type="checkbox"]+label {
+    line-height: 18px;
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100 !important;
+    padding-left: 40px;
+}
+input[type="checkbox"].filled-in:checked+label:before {
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238;
+}

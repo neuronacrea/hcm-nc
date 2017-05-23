@@ -1,0 +1,132 @@
+/*  Theme Genaral LoginAndRegister Light
+===========================================*/
+
+img {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    max-width: 190px;
+}
+.input-field {
+    margin-bottom: 2em;
+}
+i.icon {
+    font-size: 28px;
+    color: #767777;
+}
+.form-block {
+    overflow: hidden;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+.input-field label,
+input[type=text],
+input[type=password] {
+    font-weight: 500;
+}
+.input-field label {
+    left: 0 !important;
+    /*font-size: 20px !important;*/
+}
+.input-field label.active {
+    font-size: 14px !important;
+}
+input[type=text],
+input[type=password] {
+    /*font-size: 20px;*/
+    color: #bdbdbd;
+}
+/*  Content LoginAndRegister Light
+===========================================*/
+
+.form-block > button:nth-child(4) {
+    margin-left: 0;
+}
+.prefix,
+.input-field .prefix.active {
+    color: #767777;
+    font-size: 28px !important;
+    top: 10px;
+}
+/*.input-field label {
+    color: #903e98 !important;
+    left: 1em;
+}*/
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #903e98;
+    box-shadow: none;
+}
+/*  Button login
+===========================================*/
+
+button.button-style {
+    /*font-size: 15px !important;*/
+    font-weight: 500;
+    min-width: 130px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/* Style Social Network
+===========================================*/
+
+.social {
+  width: 320px;
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+.scroll {
+  height: 100%;
+}
+.social button{
+  width: 150px;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 5px;
+  display: block;
+  float: left !important;
+}
+.social p {
+  color: #8F3E97;
+  margin: 0;
+}
+/* Custom Styes
+===========================================*/
+
+.cover-login{
+    height: 195px;
+    background: url('../../../../../img/background/login-cover.png') no-repeat center;
+    background-size: cover;
+    border-bottom: 2px solid #d50f67;
+}
+.input-field label {
+    color: #FFF !important;
+    left: 1em;
+    font-size: 10px !important;
+}
+button.button-style{
+    font-size: 10px !important;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    margin: auto;
+}
+input[type=text],
+input[type=password]{
+    font-size: 10px !important;
+}
+.login-link{
+    text-align: center;
+    margin-top: 10px;
+    height: 20px;
+}
+.login-link a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 10px;
+}
+.login-footer{
+    display: block;
+    background: none;
+    height: 80px
+}

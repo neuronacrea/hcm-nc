@@ -1,0 +1,69 @@
+/*  #General Parallax Travel
+===========================================*/
+.container-hearder-image {
+  height: 250px;
+  width: 100%;
+}
+.card {
+  overflow: visible;
+  margin: 0 0 1rem 0;
+}
+.card-top,
+.card-rate {
+    padding: 10px;
+}
+.card-rate .reviews {
+    font-weight: normal;
+    color: #434343;
+    font-size: 15px;
+    line-height: 29px;
+}
+.socila-share .icon {
+    color: #e0e2e2;
+    font-size: 24px;
+}
+.rate-star {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.rate-star .icon {
+    color: #853a96;
+    font-size: 24px;
+    width: 30px;
+    display: block;
+    float: left;
+}
+.card-top .badge-assertive {
+    background-color: #853a96;
+    min-height: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    display: table;
+    top: -32px;
+    z-index: 99999;
+    right: 15px;
+}
+.badge-assertive .icon {
+    color: #fcd736;
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.travel.item {
+    overflow: visible !important;
+    border-bottom: none;
+}
+.item-content.item-text-wrap {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin: 5px 10px;
+}
+.item-content.item-text-wrap span {
+    font-weight: bold;
+    color: #853a96;
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}

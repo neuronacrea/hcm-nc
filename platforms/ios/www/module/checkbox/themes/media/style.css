@@ -1,0 +1,38 @@
+/*  #General Media Checkbox
+===========================================*/
+
+h2 {
+    font-weight: 100 !important;
+    padding-top: 5px;
+    padding-left: 5px;
+    float: left;
+    font-size: 1.2em !important;
+    color: #ffffff;
+    line-height: normal;
+}
+.checkbox-block .item {
+    background-color: rgba(38, 50, 56, 0.8);
+    padding: 10px;
+    margin: 5px;
+}
+.checkbox-block i.icon {
+    font-size: 1.6em;
+    color: #ef4438;
+}
+.checkbox-block .btn-flat {
+    padding: 0;
+}
+input[type="checkbox"]+label {
+    margin-top: 10px;
+}
+input[type="checkbox"].filled-in:not(:checked)+label:after {
+    border: 2px solid #ef4438;
+}
+input[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #ef4438;
+    background-color: #ef4438;
+}
+input[type="checkbox"].filled-in:checked+label:before {
+    border-right: 2px solid #253238;
+    border-bottom: 2px solid #253238;
+}

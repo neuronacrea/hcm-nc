@@ -1,0 +1,91 @@
+/*  Theme Expandable Social
+===========================================*/
+
+.collapsible h2,
+.collapsible p,
+.collapsible-body h2 {
+    font-weight: 500;
+}
+.block-avatar.item-avatar img {
+    max-width: 64px;
+    max-height: 64px;
+}
+.collapsible {
+    border: 0;
+    box-shadow: none;
+    margin-top: 0;
+}
+.collapsible-header {
+    -webkit-animation: fadeInLeft 1s;
+    -moz-animation: fadeInLeft 1s;
+    -o-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+.active i.icon-chevron-down {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    right: 5px;
+}
+/*  Theme Images Top
+===========================================*/
+
+.container-hearder-image {
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid #fcd836;
+    display: table;
+    top: 0;
+}
+.block-avatar {
+    border-color: transparent!important;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 90px;
+}
+.block-avatar p,
+.block-avatar h2 {
+    color: #fff;
+}
+/*  Theme Accordion
+===========================================*/
+
+.article.ng-hide {
+    line-height: 0;
+}
+.article.ng-hide-add,
+.article.ng-hide-remove {
+    display: block !important;
+}
+.collapsible-header.active {
+    background-color: #ddd !important;
+}
+.collapsible-header {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.collapsible-header p {
+    margin: 0;
+    line-height: normal;
+    margin: 0;
+    line-height: normal;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.collapsible-header i.icon {
+    font-size: 24px;
+    color: #863a96;
+}
+.collapsible-body h2 {
+    line-height: 35px;
+    font-size: 14px;
+    color: #767777;
+}
+.collapsible-body i.icon {
+    color: #fcd836;
+    font-size: 25px;
+}

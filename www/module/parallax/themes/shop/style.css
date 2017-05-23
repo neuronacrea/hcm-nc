@@ -1,0 +1,79 @@
+/*  #Thema Parallax Shop
+===========================================*/
+
+.container-hearder-image {
+    background-color: rgba(129, 119, 47, 0.7);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 250px;
+    display: table;
+    position: relative;
+}
+.title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+i.icon {
+    color: #ffffff;
+    font-size: 20px;
+}
+h1,
+h2 {
+    font-weight: bold;
+    color: #cedd37;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 24px;
+}
+.social-network {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.old-price {
+    top: 20px;
+    font-size: 14px;
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+.new-price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #b0b536 !important;
+    top: 40px;
+}
+.old-price,
+.new-price {
+    position: absolute;
+    right: 5px;
+}
+/*  #Parallax Content
+===========================================*/
+
+a.item {
+    min-height: 80px;
+    padding-left: 90px;
+    padding-right: 75px
+}
+.container-body-image .item {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+.container-body-image .item-thumbnail-left img {
+    top: 0;
+    left: 0;
+}
+.container-body-image h3 {
+    font-size: 16px;
+    color: #c0cb33;
+}
+.container-body-image p {
+    font-size: 12px;
+    color: #bdbdbd;
+    line-height: normal;
+}

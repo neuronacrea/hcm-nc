@@ -1,0 +1,67 @@
+/*  #Thema General Shop
+===========================================*/
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    z-index: 9;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+.ion-record:before {
+    font-family: 'Fontello';
+    content: "\e9b6";
+    color: red;
+}
+button.button-slider {
+  color: #ffffff;
+  font-weight: normal;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+  border-width: 0;
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin-top: -15px;
+}
+.slider {
+    height: 92%;
+}
+.scroll {
+    height: 100%;
+    min-height: 100%;
+}
+.slidertext {
+  background-size: cover;
+  height: 85%;
+  margin: 5% auto;
+  display: table;
+  width: 90%;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidertext::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  top: 0;
+  background: rgba(0,121,107,1);
+background: -moz-linear-gradient(45deg, rgba(0,121,107,1) 0%, rgba(173,212,128,1) 50%, rgba(206,220,55,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,121,107,1)), color-stop(50%, rgba(173,212,128,1)), color-stop(100%, rgba(206,220,55,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,121,107,1) 0%, rgba(173,212,128,1) 50%, rgba(206,220,55,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,121,107,1) 0%, rgba(173,212,128,1) 50%, rgba(206,220,55,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,121,107,1) 0%, rgba(173,212,128,1) 50%, rgba(206,220,55,1) 100%);
+background: linear-gradient(45deg, rgba(0,121,107,1) 0%, rgba(173,212,128,1) 50%, rgba(206,220,55,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00796b', endColorstr='#cedc37', GradientType=1 );
+
+}
+.slider-pager {
+    bottom: 35px;
+}

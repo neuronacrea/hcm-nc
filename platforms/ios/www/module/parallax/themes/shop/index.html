@@ -1,0 +1,29 @@
+<!--- Theme Parallax Shop -->
+<ion-content delegate-handle="scroller" elastic-header="elastic-header" class="has-header">
+    <div id="elastic-header" class="container-hearder-image">
+        <div class="title">
+            <h2>{{parallaxController.data.title}}</h2>
+            <h1>{{parallaxController.data.description}}</h1>
+        </div>
+
+        <!-- Parallax Shop  Social Shere-->
+        <div class="social-network">
+            <i class="icon {{parallaxController.data.iconShare}} right" ng-click="parallaxController.onClick('onShare', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconFavorite}} right" ng-click="parallaxController.onClick('onFavorite', item, $event)"></i>
+            <i class="icon {{parallaxController.data.iconLike}} right" ng-click="parallaxController.onClick('onLike', item, $event)"></i>
+        </div>
+    </div>
+
+    <!-- Parallax Shop  List-->
+    <ion-list>
+        <div class="container-body-image">
+            <a ng-repeat="item in parallaxController.data.items" href="#" class="item item-text-wrap item-thumbnail-left waves-effect waves-dark waves-block" ng-click="parallaxController.onClick('onItemClick', item, $event)">
+                <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <div class="old-price right">{{item.oldPrice}}</div>
+                <div class="new-price right">{{item.newPrice}}</div>
+            </a>
+        </div>
+    </ion-list>
+</ion-content>

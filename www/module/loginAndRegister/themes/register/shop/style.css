@@ -1,0 +1,76 @@
+/*  Theme Genaral LoginAndRegister Register Shop
+===================================================*/
+
+img {
+    margin: 20px auto;
+    max-width: 280px;
+}
+i.icon {
+    font-size: 30px !important;
+    color: #cedd37;
+    right: 0;
+    top: 10px;
+}
+.title-logo {
+    margin: 50px auto 0;
+}
+.title-logo span {
+    display: block;
+}
+/*  Form
+===========================================*/
+
+.form-block {
+    overflow: hidden;
+    padding: 10px;
+    clear: both;
+    margin: 0 20px;
+}
+.item.item-input {
+    padding: 0;
+    position: relative;
+}
+.input-field .prefix ~ label {
+    margin-left: 0;
+}
+.input-field label.active {
+    left: 0 !important;
+}
+.input-field label {
+    top: 20px;
+    font-size: 22px;
+    line-height: 15px;
+    color: #b0b536;
+    left: 0;
+}
+.input-field {
+    border-bottom: 1px solid #cedd37;
+}
+.input-field label.active,
+input[type=text]:focus + label,
+input[type=password]:focus + label {
+    font-size: 12px;
+    color: #82792f !important;
+    left: -15px;
+    top: 15px;
+}
+input[type=text],
+input[type=password] {
+    border-bottom: 1px solid transparent;
+    color: #b0b536 !important;
+    font-size: 20px;
+    margin-left: 0 !important;
+    margin-bottom: 0;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    border-bottom: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+.button-style {
+    color: #ffffff !important;
+    border: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}

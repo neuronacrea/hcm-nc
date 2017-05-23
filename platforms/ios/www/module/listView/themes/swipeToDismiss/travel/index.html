@@ -1,0 +1,21 @@
+<!--Theme Swipe To Dismiss Travel-->
+<ion-content class="container-image has-header">
+    <!--Swipe To Dismiss Media Travel List-->
+    <ion-list>
+        <ion-slide-box on-slide-changed="listViewController.slideHasChanged($index, item)" show-pager="false" ng-repeat="item in listViewController.data.items" type="item-text-wrap">
+            <ion-slide class="slider-block" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                <div class="item-text-wrap">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.description}}</p>
+                </div>
+            </ion-slide>
+            <ion-slide class="control">
+                <a ng-click="listViewController.deleteItem($index)">{{item.swipe}}</a>
+                <h4>{{item.message}}</h4>
+                <a ng-click="listViewController.undo(true)">{{item.undo}}</a>
+            </ion-slide>
+            <ion-slide></ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

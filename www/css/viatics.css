@@ -1,0 +1,46 @@
+.viatics{
+    color: #FFF;
+}
+.viatics .row{
+    margin-bottom: 5px;
+}
+.viatics input{margin-bottom: 0;}
+.viatics input.input-text{
+    text-align: left !important;
+    padding-left: 10px;
+}
+.viatics input[type=radio]{
+    left: initial;
+    visibility: visible;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.viatics .calendar-image{
+    vertical-align: middle;
+    display: initial;
+    margin-left: 30px;
+}
+.viatics h6{
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+}
+.viatics .trip-title{
+    color: #eda900;
+    font-size: 14px;
+}
+.viatics .values-trip{
+    color: #82bc00;
+    margin-top: 10px;
+}
+.viatics .type-querie{
+    margin-bottom: 15px;
+}
+.viatics .terms{
+    margin-top: 20px;
+}
+.viatics .dates{
+    margin-top: 10px;
+}

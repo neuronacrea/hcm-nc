@@ -1,0 +1,37 @@
+<!-- Theme Expandable Media -->
+<ion-content class="has-header container-image">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <ul class="collapsible" data-collapsible="expandable">
+        <li ng-repeat="group in listViewController.data">
+            <!-- Expandable Media Header -->
+            <div class="collapsible-header">
+                <ion-item class="item-thumbnail-left media-block red">
+                    <img ng-src="{{group.image}}" alt="{{group.title}}" />
+                    <h2>{{group.title}}</h2>
+                    <p>{{group.description}}</p>
+                    <span class="social">
+                      <i ng-if="group.iconLike" class="icon {{group.iconLike}}"
+                         ng-click="listViewController.onClick('onLike', group, $event)"></i>
+                      <i ng-if="group.iconFavorite" class="icon {{group.iconFavorite}}"
+                         ng-click="listViewController.onClick('onFavorite', group, $event)"></i>
+                      <i ng-if="group.iconShare" class="icon {{group.iconShare}}"
+                         ng-click="listViewController.onClick('onShare', group, $event)"></i>
+                  </span>
+                </ion-item>
+            </div>
+            <!-- Expandable Media Body -->
+            <div class="collapsible-body">
+                <div class="item-accordion" ng-repeat="item in group.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                    <a class="item item-thumbnail-left red darken-3 item-icon-right waves-effect waves-block waves-light" href="#">
+                        <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.description}}</p>
+                        <i class="icon {{item.iconPlay}}" ng-click="listViewController.onClick('onPlay', item, $event)"></i>
+                    </a>
+                </div>
+            </div>
+            <!--end-->
+        </li>
+    </ul>
+</ion-content>

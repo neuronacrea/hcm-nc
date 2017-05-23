@@ -1,0 +1,42 @@
+/*  #Theme Dragen And Drop Social
+===========================================*/
+
+i.icon {
+    font-size: 35px !important;
+    color: #903e98;
+}
+/*  #Content
+===========================================*/
+
+.shop img {
+    max-width: 64px !important;
+    max-height: 64px !important;
+    top: 10px !important;
+}
+.shop h2 {
+    font-size: 20px !important;
+    color: #903e98;
+}
+.shop p {
+    color: #767777;
+}
+.item-reorder {
+    padding: 0;
+}
+.item-avatar-left .item-content {
+    padding-left: 100px;
+    min-height: 84px;
+    background-color: transparent;
+}
+.item-reorder .button.icon,
+.item-right-edit.visible.active {
+    background-color: transparent !important;
+}
+.item-right-edit .button {
+    color: #863b96 !important;
+}
+.shop.item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-width: 3px;
+    border-color: #863b96;
+}

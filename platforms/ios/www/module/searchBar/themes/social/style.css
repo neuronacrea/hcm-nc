@@ -1,0 +1,71 @@
+/*  #Thema Search Social
+===========================================*/
+
+.bar-subheader {
+    height: auto;
+    padding: 0;
+}
+.has-header i.icon {
+    color: #231f20;
+}
+.list-content {
+    top: 225px!important;
+}
+input[type=search] {
+    border-bottom: 1px solid transparent;
+    margin: 0 10px;
+    font-size: 20px;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid transparent !important;
+    box-shadow: none;
+}
+h1 {
+    margin: 0 10px;
+    font-size: 35px;
+    line-height: normal;
+    font-weight: 100;
+    color: #ffffff;
+    padding-top: 65px;
+}
+h2,
+p {
+    font-weight: 400;
+    color: #424242;
+    font-size: 14px;
+}
+p {
+    color: #e0e0df;
+}
+i.icon {
+    color: #36474f;
+    font-size: 20px !important;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center;
+}
+.container-hearder-image {
+    height: 168px!important;
+}
+.item.item-input {
+    background-color: rgba(255, 255, 255, 0.59) !important;
+    border-color: transparent !important;
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+.item.item-input > i.icon:first-child {
+    border-right: 1px solid #36474f;
+}
+.list i.icon {
+    color: #853a96;
+}
+/*  #Ios Style
+===========================================*/
+
+.platform-ios .list-content {
+    top: 233px!important;
+}

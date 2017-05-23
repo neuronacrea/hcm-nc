@@ -1,0 +1,60 @@
+.news .profile-image{
+    top: 90px;
+}
+.news-cover h1{
+    padding-top: 40px;
+}
+.news h6{color: #FFF;}
+.news .input-text-center{text-align: center !important;}
+.news input, .news textarea{padding-left: 10px;}
+.news .schedule input{
+    font-size: 18px;
+    width: 65%;
+    margin: auto;
+    padding: 0;
+}
+.items-news:first-child{margin-top: 10px;}
+.items-news .col div{
+    background: rgba(255,255,255,0.36);
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    border-left-width: 2px;
+    border-left-style: solid;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+.absenteeism{
+    border-left-color: #008aab;
+}
+.certificates{
+    border-left-color: #009d91;
+}
+.viatic{
+    border-left-color: #3fae29;
+}
+.queries{
+    border-left-color: #ff6a00;
+}
+.calendar-img{
+    width: 30px;
+}
+.news .input-text{
+    text-align: left;
+    color: rgba(255,255,255,0.65);
+}
+.news textarea.input-text{
+    height: 100px;
+}
+.camera-img{
+    float: left;
+    width: 40px;
+}
+.button-absenteeism.activated{
+    background-color: rgba(213, 15, 103, 0.85);
+}
+.row-upload{
+    margin-top: -20px;
+}

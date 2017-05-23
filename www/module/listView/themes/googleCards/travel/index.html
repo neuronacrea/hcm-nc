@@ -1,0 +1,29 @@
+<!--Theme Google Cards Travel-->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Theme Google Cards  Content-->
+    <ion-list ng-click="listViewController.onClick('onItemClick', item, $event)" ng-repeat="(key, item) in listViewController.data">
+        <ion-slide-box on-slide-changed="listViewController.deleteItem(key, true)" show-pager="false">
+            <!--Theme Google Cards Travel Card-->
+            <ion-slide>
+                <div class="card">
+                    <div class="card-image">
+                        <img ng-src="{{item.image}}" alt="{{item.headerText}}" />
+                        <span class="card-title">{{item.headerText}}</span>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">{{item.title}}</h2>
+                        <p>{{item.description}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="waves-effect waves-deep-purple btn-flat right" ng-click="listViewController.onClick('onShare', item, $event)">{{item.secondButton}}</a>
+                        <a href="#" class="waves-effect waves-deep-purple btn-flat right" ng-click="listViewController.onClick('onExplore', item, $event)">{{item.firstButton}}</a>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

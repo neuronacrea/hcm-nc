@@ -1,0 +1,61 @@
+/*  #General Menu Media
+===========================================*/
+
+.hero {
+    padding: 25px 0;
+    height: 200px;
+    background: #fcb64e;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(45deg, #fcb64e 0%, #f1582c 52%, #b72025 100%);
+    /* FF3.6-15 */
+    
+    background: -webkit-linear-gradient(45deg, #fcb64e 0%, #f1582c 52%, #b72025 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    
+    background: linear-gradient(45deg, #fcb64e 0%, #f1582c 52%, #b72025 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fcb64e', endColorstr='#b72025', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.hero img {
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+}
+.container-body-image {
+    background-color: rgba(38, 50, 56, 0.7) !important;
+    background-blend-mode: multiply;
+}
+.list a.item {
+    font-size: 16px;
+    color: #ffffff !important;
+}
+.list a.item i.icon {
+    font-size: 24px !important;
+    color: #ef4438;
+}
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+}
+p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    font-weight: 500;
+}
+.has-header-media {
+    margin-top: 200px;
+}
+.has-header-media .item-icon-left {
+    padding-left: 70px;
+}
+.has-header-media i.icon {
+    left: 30px;
+}
+.menu {
+    background-color: rgb(38, 50, 56);
+}

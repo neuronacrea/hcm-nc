@@ -1,0 +1,15 @@
+<ion-view view-title="{{title}}" ng-init="initItemData()">
+    <ion-content ng-show="items.length > 0" class="grey lighten-3">
+        <ion-list>
+            <ion-item class="main-menu" ng-href="#" ng-if="!item.url" ng-repeat="item in items" menu-close ng-click="onSelectItem(item)">
+                <span>{{item.title}}</span>
+            </ion-item>
+            <ion-item class="main-menu" ng-if="item.url" ng-repeat="item in items" ng-href="#/app/{{item.url}}">
+                <span>{{item.title}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+    <ion-content class="left-menu-background descript login" ng-show="items.length == 0">        
+    </ion-content>
+</ion-view>

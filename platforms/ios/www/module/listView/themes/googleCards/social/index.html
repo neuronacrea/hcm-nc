@@ -1,0 +1,32 @@
+<!--Theme Google Cards Social-->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!--Google Cards Social Content-->
+    <ion-list ng-click="listViewController.onClick('onItemClick', item, $event)" ng-repeat="(key, item) in listViewController.data">
+        <ion-slide-box on-slide-changed="listViewController.deleteItem(key, true)" show-pager="false">
+            <!--Google Cards Social Card-->
+            <ion-slide>
+                <div class="card">
+                    <div class="item item-avatar">
+                        <img ng-src="{{item.avatar}}" />
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.shortDescription}}</p>
+                    </div>
+                    <div class="item item-image">
+                        <img ng-src="{{item.image}}" alt="{{item.title}}" />
+                    </div>
+                    <div class="item item-body tem-text-wrap">
+                        <p>{{item.description}}</p>
+                        <div class="card-bottom">
+                            <a href="#" class="subdued right" ng-click="listViewController.onClick('onFollow', item, $event)">{{item.secondButton}}</a>
+                            <a href="#" class="subdued right" ng-click="listViewController.onClick('onLike', item, $event)">{{item.firstButton}}</a>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-list>
+</ion-content>

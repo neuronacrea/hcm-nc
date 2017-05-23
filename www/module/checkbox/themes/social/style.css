@@ -1,0 +1,29 @@
+/*  #General Social Checkbox
+===========================================*/
+
+.item-avatar h2 {
+    font-weight: 400;
+    padding-top: 10px;
+    float: left;
+    font-size: 16px;
+    color: #434343;
+}
+.checkbox-block .item {
+    background-color: #f4f5f5 !important;
+}
+input[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #fcd736;
+    background-color: transparent;
+}
+input[type="checkbox"].filled-in:not(:checked)+label:after {
+    border: 2px solid #fcd736 !important;
+}
+input[type="checkbox"]+label {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fcd736;
+}
+input[type="checkbox"].filled-in:checked+label:before {
+    border-right: 2px solid #fcd736;
+    border-bottom: 2px solid #fcd736;
+}

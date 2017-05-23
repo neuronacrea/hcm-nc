@@ -1,0 +1,24 @@
+<!-- Themes Expandable Universal -->
+<ion-content class="has-header">
+    <ion-refresher pulling-text="{{listViewController.data.refreshMessage}}" on-refresh="listViewController.doRefresh()">
+    </ion-refresher>
+    <!-- Expandable Universal Content-->
+    <ul class="collapsible" data-collapsible="expandable">
+        <li class="list-media" ng-repeat="group in listViewController.data.items">
+            <div class="collapsible-header">
+                <ion-item class="item-icon-left item-icon-right transparent">
+                    <i ng-if="group.icon" class="{{group.icon}}"></i> {{group.title}}
+                    <i class="icon icon-chevron-down"></i>
+                </ion-item>
+            </div>
+            <!-- Expandable Universal Accordion-->
+            <div class="collapsible-body">
+                <div class="item-accordion" ng-repeat="item in group.items" ng-click="listViewController.onClick('onItemClick', item, $event)">
+                    <a href="#" class="item item-icon-left waves-effect waves-block waves-light">
+                        <i ng-if="item.icon" class="{{item.icon}}"></i> {{item.title}}
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</ion-content>

@@ -1,0 +1,22 @@
+<!--Theme Wizard Social -->
+<ion-content class="has-header" scroll="false">
+  <ion-slide-box on-slide-changed="wizardController.slideHasChanged($index)">
+    <ion-slide  class="container-body-image"
+        ng-repeat="item in wizardController.data.items"
+        style="background-image:url({{item.backgroundImage}})">
+      <a class="waves-effect waves-light btn-flat disabled right"
+        ng-if="item.skip" ng-click= "wizardController.onClick('onSkip', $event)">{{item.skip}}</a>
+      <h1>{{item.title}}</h1>
+      <p>{{item.description}}</p>
+    </ion-slide>
+  </ion-slide-box>
+  <!-- <button class="buton-control waves-effect waves-light btn-flat disabled" ng-if="item.button">{{item.button}}</button> -->
+  <a class="buton-control text-center"
+  ng-click= "wizardController.changeSlide(1)"
+  ng-show="wizardController.show('next')">{{wizardController.data.btnNext}}</a>
+
+  <a class="buton-control text-center"
+  ng-click= "wizardController.onClick('onFinish', $event)"
+  ng-show="wizardController.show('finish')">Finish</a>
+
+</ion-content>

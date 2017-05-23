@@ -1,0 +1,72 @@
+/* Genaral Search Travel
+===========================================*/
+
+.bar-subheader {
+    height: auto;
+    padding: 0;
+}
+.list-content a.item {
+    padding-right: 90px;
+}
+input[type=search] {
+    border-bottom: 1px solid transparent;
+    margin: 0 10px;
+    font-size: 20px;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid transparent !important;
+    box-shadow: none;
+}
+input[type=search]:focus:not([readonly]) {
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+}
+.item.item-input {
+    background-color: rgba(247, 249, 249, 0.81);
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px
+}
+.item.item-input > i.icon:first-child {
+    border-right: 1px solid #000000;
+}
+i.icon {
+    color: #8f3e97;
+    font-size: 20px !important;
+    width: 45px;
+    text-align: center;
+}
+.list-content h2 {
+    color: #546e7a;
+    font-size: 25px;
+    line-height: normal;
+}
+.list-content span {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    font-size: 25px;
+    color: #8f3e97;
+    font-weight: 900;
+}
+.container-hearder-image {
+    height: 155px!important;
+}
+.list-content {
+    top: 212px!important;
+}
+.list-content a i.icon:nth-child(1) {
+    top: -15px;
+}
+.list-content a i.icon:nth-child(2) {
+    top: 15px;
+}
+/*  #Ios Style
+===========================================*/
+
+.platform-ios .list-content {
+    top: 220px!important;
+}
